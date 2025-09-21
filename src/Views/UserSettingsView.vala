@@ -25,6 +25,8 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         private DeltaUser delta_user;
         private FPUtils fp_utils;
 
+        private SimpleAction disable_action;
+
         private Gtk.ListStore language_store;
         private Gtk.ListStore region_store;
 
@@ -36,7 +38,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         private Gtk.Button fingerprint_button;
         private Gtk.Button remove_fp_button;
         private Gtk.Button password_button;
-        private Gtk.Button enable_user_button;
+        private Gtk.Button disable_user_button;
         private Gtk.ComboBoxText user_type_dropdown;
         private Gtk.ComboBox language_dropdown;
         private Gtk.ComboBox region_box;
@@ -64,6 +66,14 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         }
 
         construct {
+            disable_action = new SimpleAction.stateful ("disable", null, new Variant.boolean (user.get_locked ()));
+            disable_action.change_state.connect (change_lock);
+
+            var action_group = new SimpleActionGroup ();
+            action_group.add_action (disable_action);
+
+            insert_action_group ("user", action_group);
+
             utils = new UserUtils (user, this);
             delta_user = new DeltaUser (user);
             try {
@@ -300,10 +310,9 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 change_password_dialog.request_password_change.connect (change_password);
             });
 
-            enable_user_button = new Gtk.Button () {
-                sensitive = false
+            disable_user_button = new Gtk.Button.with_label (_("Disable Account")) {
+                action_name = "user.disable"
             };
-            enable_user_button.clicked.connect (change_lock);
 
             var remove_user_button = new Gtk.Button.with_label (_("Remove Account")) {
                 sensitive = false
@@ -350,7 +359,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 margin_start = 12
             };
             action_area.append (remove_user_button);
-            action_area.append (enable_user_button);
+            action_area.append (disable_user_button);
             action_area.append (remove_lock);
             action_area.append (new Gtk.Grid () { hexpand = true });
             if (fp_box != null) {
@@ -381,11 +390,13 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             if (get_current_user () == user) {
                 user_type_label.secondary_text = CURRENT_USER_STRING;
                 remove_lock.tooltip_text = CURRENT_USER_STRING;
+                disable_action.set_enabled (false);
             } else if (is_last_admin (user)) {
+                disable_action.set_enabled (false);
                 user_type_label.secondary_text = LAST_ADMIN_STRING;
                 remove_lock.tooltip_text = LAST_ADMIN_STRING;
             } else {
-                enable_user_button.sensitive = true;
+                disable_action.set_enabled (true);
 
                 remove_user_button.sensitive = true;
                 action_area.remove (remove_lock);
@@ -487,14 +498,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 }
             }
 
-            var user_locked = user.get_locked ();
-            if (user_locked) {
-                enable_user_button.label = _("Enable Account");
-                enable_user_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
-            } else {
-                enable_user_button.label = _("Disable Account");
-                enable_user_button.remove_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
-            }
+            disable_action.set_state (user.get_locked ());
 
             if (delta_user.language != user.get_language ()) {
                 update_language ();
@@ -608,7 +612,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             }
         }
 
-        private void change_lock () {
+        private void change_lock (SimpleAction action, Variant? value) {
             var permission = get_permission ();
             if (!permission.allowed) {
                 try {
@@ -619,14 +623,16 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 }
             }
 
-            var user_locked = user.get_locked ();
-            if (user_locked) {
-                user.set_password_mode (Act.UserPasswordMode.REGULAR);
+            action.set_state (value);
+            user.set_locked (value.get_boolean ());
+
+            if (value.get_boolean ()) {
+                disable_user_button.label = _("Enable Account");
+                user.set_password_mode (REGULAR);
             } else {
+                disable_user_button.label = _("Disable Account");
                 user.set_automatic_login (false);
             }
-
-            user.set_locked (!user_locked);
         }
 
         private void change_password (Act.UserPasswordMode mode, string? new_password) {
