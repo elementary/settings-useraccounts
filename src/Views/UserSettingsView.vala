@@ -114,7 +114,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
             disable_switch = new Gtk.Switch () {
                 action_name = "user.enable",
-                tooltip_text = _("Disable Account"),
+                tooltip_text = _("Account Lock"),
                 valign = START
             };
 
@@ -396,7 +396,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
                 enable_action.set_enabled (false);
                 disable_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
-                    _("Disable Account"),
+                    _("Account Lock"),
                     CURRENT_USER_STRING
                 );
             } else if (is_last_admin (user)) {
@@ -405,7 +405,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
                 enable_action.set_enabled (false);
                 disable_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
-                    _("Disable Account"),
+                    _("Account Lock"),
                     LAST_ADMIN_STRING
                 );
             } else {
