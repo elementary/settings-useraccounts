@@ -511,8 +511,9 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 }
             }
 
-            if (enable_action.state == user.get_locked ()) {
-                enable_action.set_state (!user.get_locked ());
+            var user_locked = user.get_locked ();
+            if (enable_action.state == user_locked) {
+                enable_action.set_state (!user_locked);
             }
 
             if (delta_user.language != user.get_language ()) {
