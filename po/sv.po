@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2018-10-20 13:32+0000\n"
-"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
-"Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-useraccounts/sv/>\n"
+"PO-Revision-Date: 2025-10-22 05:26+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
+"Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
+"useraccounts/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-09 06:00+0000\n"
 
 #: src/Plug.vala:37
@@ -59,7 +59,7 @@ msgstr ""
 
 #: src/Dialogs/AvatarDialog.vala:31
 msgid "Choose the part of the image to use as an avatar."
-msgstr ""
+msgstr "Välj den del av bilden som du vill använda som avatar."
 
 #: src/Dialogs/AvatarDialog.vala:38
 msgid "Change Avatar"
@@ -119,81 +119,83 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:41
 msgid "Enrolling fingerprint"
-msgstr ""
+msgstr "Registrering av fingeravtryck"
 
 #: src/Dialogs/FingerprintDialog.vala:46
 msgid "Touch the fingerprint sensor to begin."
-msgstr ""
+msgstr "Tryck på fingeravtryckssensorn för att börja."
 
 #: src/Dialogs/FingerprintDialog.vala:82
 msgid "Finish"
-msgstr ""
+msgstr "Slutför"
 
 #: src/Dialogs/FingerprintDialog.vala:88
 msgid "Fingerprint device not available."
-msgstr ""
+msgstr "Fingeravtrycksenhet inte tillgänglig."
 
 #: src/Dialogs/FingerprintDialog.vala:122
 msgid "Enrollment complete"
-msgstr ""
+msgstr "Inskrivning slutförd"
 
 #: src/Dialogs/FingerprintDialog.vala:123
 msgid "This fingerprint can now be used for authentication."
-msgstr ""
+msgstr "Detta fingeravtryck kan nu användas för autentisering."
 
 #: src/Dialogs/FingerprintDialog.vala:127
 msgid "Enrolling failed. Cancel and try again."
-msgstr ""
+msgstr "Registreringen misslyckades. Avbryt och försök igen."
 
 #: src/Dialogs/FingerprintDialog.vala:134
 msgid "Stage passed. Lift your finger and touch the sensor again."
-msgstr ""
+msgstr "Steg passerat. Lyft fingret och rör vid sensorn igen."
 
 #: src/Dialogs/FingerprintDialog.vala:137
 msgid "Trying to scan again"
-msgstr ""
+msgstr "Försöker skanna igen"
 
 #: src/Dialogs/FingerprintDialog.vala:140
 msgid "The swipe was too short. Lift your finger and swipe the sensor again."
-msgstr ""
+msgstr "Svepningen var för kort. Lyft fingret och svep sensorn igen."
 
 #: src/Dialogs/FingerprintDialog.vala:143
 msgid "The touch was too fast. Lift your finger and touch the sensor again."
-msgstr ""
+msgstr "Beröringen var för snabb. Lyft fingret och rör vid sensorn igen."
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
 "The fingerprint was not centered on the censor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
+"Fingeravtrycket var inte centrerat på censorn. Lyft fingret och tryck på "
+"sensorn igen."
 
 #: src/Dialogs/FingerprintDialog.vala:149
 msgid "Remove your finger and try again"
-msgstr ""
+msgstr "Ta bort fingret och försök igen"
 
 #: src/Dialogs/FingerprintDialog.vala:153
 msgid "Can't remember additional fingerprints"
-msgstr ""
+msgstr "Kan inte komma ihåg ytterligare fingeravtryck"
 
 #: src/Dialogs/FingerprintDialog.vala:154
 msgid "Forget a saved fingerprint and try again."
-msgstr ""
+msgstr "Glöm ett sparat fingeravtryck och försök igen."
 
 #: src/Dialogs/FingerprintDialog.vala:158
 msgid "This fingerprint is already enrolled."
-msgstr ""
+msgstr "Det här fingeravtrycket är redan registrerat."
 
 #: src/Dialogs/FingerprintDialog.vala:161
 msgid "The fingerprint sensor was disconnected."
-msgstr ""
+msgstr "Fingeravtryckssensorn var bortkopplad."
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
-msgstr ""
+msgstr "Något gick fel"
 
 #: src/Dialogs/FingerprintDialog.vala:166
 msgid "Cancel and try again"
-msgstr ""
+msgstr "Avbryt och försök igen"
 
 #: src/Views/GuestSettingsView.vala:14
 msgid ""
@@ -219,12 +221,12 @@ msgstr "Ändringarna för gästsessionen kommer att tillämpas vid omstart"
 #: src/Views/GuestSettingsView.vala:98 src/Views/MainView.vala:158
 #: src/Views/MainView.vala:225
 msgid "Unable to acquire permission"
-msgstr ""
+msgstr "Kan inte få tillstånd"
 
 #: src/Views/GuestSettingsView.vala:99
 msgid ""
 "The guest account cannot be modified without the required system permission."
-msgstr ""
+msgstr "Gästkontot kan inte ändras utan erforderlig systembehörighet."
 
 #: src/Views/MainView.vala:29
 msgid "My Account"
@@ -235,10 +237,8 @@ msgid "Other Accounts"
 msgstr "Övriga konton"
 
 #: src/Views/MainView.vala:38
-#, fuzzy
-#| msgid "Create user account"
 msgid "Create User Account…"
-msgstr "Skapa användarkonto"
+msgstr "Skapa användarkonto…"
 
 #: src/Views/MainView.vala:71
 msgid "Undo"
@@ -247,15 +247,16 @@ msgstr "Ångra"
 #: src/Views/MainView.vala:159
 msgid "A new account cannot be created without the required system permission."
 msgstr ""
+"Det går inte att skapa ett nytt konto utan den systembehörighet som krävs."
 
 #: src/Views/MainView.vala:226
 msgid "An account cannot be removed without the required system permission."
-msgstr ""
+msgstr "Ett konto kan inte tas bort utan erforderlig systembehörighet."
 
 #: src/Views/MainView.vala:248
 #, c-format
 msgid "Removed “%s”"
-msgstr ""
+msgstr "Borttaget \"%s\""
 
 #: src/Views/MainView.vala:306
 msgid "Enabled"
@@ -288,49 +289,41 @@ msgid "Click to switch to Language & Region Settings"
 msgstr "Klicka för att ändra Språk- och regionsinställningar"
 
 #: src/Views/UserSettingsView.vala:225
-#, fuzzy
-#| msgid "Log In automatically:"
 msgid "Log In automatically"
-msgstr "Automatisk inloggning:"
+msgstr "Logga in automatiskt"
 
 #: src/Views/UserSettingsView.vala:236
 msgid "Set Up Fingerprint…"
-msgstr ""
+msgstr "Ställ in fingeravtryck…"
 
 #: src/Views/UserSettingsView.vala:241
 msgid "Remove Fingerprint"
-msgstr ""
+msgstr "Ta bort fingeravtryck"
 
 #: src/Views/UserSettingsView.vala:287
 msgid "Change Password…"
 msgstr "Byt lösenord…"
 
 #: src/Views/UserSettingsView.vala:308
-#, fuzzy
-#| msgid "User Accounts"
 msgid "Remove Account"
-msgstr "Användarkonton"
+msgstr "Ta bort konto"
 
 #: src/Views/UserSettingsView.vala:321
 msgid "Some settings require administrator rights to be changed"
 msgstr "Vissa inställningar kräver administratörsrättigheter för att ändras"
 
 #: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
 msgid "Enable Account"
-msgstr "Aktivera användarkonto"
+msgstr "Aktivera konto"
 
 #: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
 msgid "Disable Account"
-msgstr "Avaktivera användarkonto"
+msgstr "Inaktivera konto"
 
 #: src/Views/UserSettingsView.vala:658
 #, c-format
 msgid "Unable to change the password for %s"
-msgstr ""
+msgstr "Det går inte att ändra lösenordet för %s"
 
 #: src/Widgets/Popovers/AvatarPopover.vala:32
 msgid "Remove"
