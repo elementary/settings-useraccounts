@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2025-10-22 08:58+0000\n"
+"PO-Revision-Date: 2025-10-22 09:59+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "user-accounts-plug-extra/sv/>\n"
@@ -21,15 +21,15 @@ msgstr ""
 
 #: data/useraccounts.policy.in.in:10
 msgid "Manage user accounts"
-msgstr ""
+msgstr "Hantera användarkonton"
 
 #: data/useraccounts.policy.in.in:11
 msgid "Authentication is required to change user data"
-msgstr ""
+msgstr "Autentisering krävs för att ändra användardata"
 
 #: data/useraccounts.metainfo.xml.in:10
 msgid "User Accounts Settings"
-msgstr ""
+msgstr "Inställningar för användarkonton"
 
 #: data/useraccounts.metainfo.xml.in:11
 msgid ""
@@ -48,7 +48,7 @@ msgstr "Förbättringar:"
 
 #: data/useraccounts.metainfo.xml.in:36
 msgid "Redesign to make hint text more obvious"
-msgstr ""
+msgstr "Ny design för att göra hänvisningstexten tydligare"
 
 #: data/useraccounts.metainfo.xml.in:37
 msgid "Restore sidebar position"
@@ -70,11 +70,12 @@ msgstr "Åtgärdar:"
 
 #: data/useraccounts.metainfo.xml.in:71 data/useraccounts.metainfo.xml.in:85
 msgid "Update permissions when enabling and disabling accounts"
-msgstr ""
+msgstr "Uppdatera behörigheter när du aktiverar och inaktiverar konton"
 
 #: data/useraccounts.metainfo.xml.in:84
 msgid "Ensure user information in sidebar updates upon changes"
 msgstr ""
+"Säkerställ att användarinformationen i sidofältet uppdateras vid ändringar"
 
 #: data/useraccounts.metainfo.xml.in:89
 msgid "Support locales with 3-letter codes"
