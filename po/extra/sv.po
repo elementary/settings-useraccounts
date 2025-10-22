@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2025-10-22 05:26+0000\n"
+"PO-Revision-Date: 2025-10-22 08:58+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "user-accounts-plug-extra/sv/>\n"
@@ -52,7 +52,7 @@ msgstr ""
 
 #: data/useraccounts.metainfo.xml.in:37
 msgid "Restore sidebar position"
-msgstr ""
+msgstr "Återställ sidofältets position"
 
 #: data/useraccounts.metainfo.xml.in:38 data/useraccounts.metainfo.xml.in:48
 #: data/useraccounts.metainfo.xml.in:62 data/useraccounts.metainfo.xml.in:75
