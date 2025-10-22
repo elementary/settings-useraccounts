@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2025-10-22 05:26+0000\n"
+"PO-Revision-Date: 2025-10-22 09:59+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/sv/>\n"
@@ -55,7 +55,7 @@ msgstr "Gästsession"
 
 #: src/Dialogs/AvatarDialog.vala:30
 msgid "Crop & Position"
-msgstr ""
+msgstr "Beskärning och position"
 
 #: src/Dialogs/AvatarDialog.vala:31
 msgid "Choose the part of the image to use as an avatar."
@@ -283,10 +283,8 @@ msgid "Standard"
 msgstr "Standard"
 
 #: src/Views/UserSettingsView.vala:212
-#, fuzzy
-#| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
-msgstr "Klicka för att ändra Språk- och regionsinställningar"
+msgstr "Klicka för att växla till språk- och regioninställningar"
 
 #: src/Views/UserSettingsView.vala:225
 msgid "Log In automatically"
