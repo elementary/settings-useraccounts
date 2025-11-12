@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2025-10-24 07:55+0000\n"
+"PO-Revision-Date: 2025-10-30 09:55+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/sv/>\n"
@@ -22,7 +22,8 @@ msgstr "Användarkonton"
 #: src/Plug.vala:38
 msgid ""
 "Manage account permissions and configure user names, passwords, and photos"
-msgstr "Hantera kontobehörighet och ställ in användarnamn, lösenord och foton"
+msgstr ""
+"Hantera kontobehörighet och konfigurera användarnamn, lösenord och foton"
 
 #: src/Plug.vala:82
 msgid "Avatar"
@@ -59,7 +60,7 @@ msgstr "Beskärning och position"
 
 #: src/Dialogs/AvatarDialog.vala:31
 msgid "Choose the part of the image to use as an avatar."
-msgstr "Välj den del av bilden som du vill använda som avatar."
+msgstr "Välj den del av bilden som du vill använda som visningsbild."
 
 #: src/Dialogs/AvatarDialog.vala:38
 msgid "Change Avatar"
@@ -67,15 +68,15 @@ msgstr "Byt visningsbild"
 
 #: src/Dialogs/ChangePasswordDialog.vala:33
 msgid "Current Password"
-msgstr "Nuvarande lösenord"
+msgstr "Aktuellt lösenord"
 
 #: src/Dialogs/ChangePasswordDialog.vala:37
 msgid "Press to authenticate"
-msgstr "Tryck för att verifiera"
+msgstr "Tryck för att autentisera"
 
 #: src/Dialogs/ChangePasswordDialog.vala:41
 msgid "Authentication failed"
-msgstr "Verifieringen misslyckades"
+msgstr "Autentiseringen misslyckades"
 
 #: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
 #: src/Dialogs/FingerprintDialog.vala:65
@@ -114,7 +115,7 @@ msgstr "Användarnamnet är upptaget"
 #: src/Dialogs/NewUserDialog.vala:129
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
-"Användarnamn kan bara innehålla små bokstäver och siffror, och inga "
+"Användarnamn får endast innehålla gemena bokstäver och siffror samt inga "
 "mellanslag"
 
 #: src/Dialogs/FingerprintDialog.vala:41
@@ -147,7 +148,7 @@ msgstr "Registreringen misslyckades. Avbryt och försök igen."
 
 #: src/Dialogs/FingerprintDialog.vala:134
 msgid "Stage passed. Lift your finger and touch the sensor again."
-msgstr "Steg passerat. Lyft fingret och rör vid sensorn igen."
+msgstr "Steget avklarat. Lyft fingret och rör vid sensorn igen."
 
 #: src/Dialogs/FingerprintDialog.vala:137
 msgid "Trying to scan again"
@@ -166,7 +167,7 @@ msgid ""
 "The fingerprint was not centered on the censor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
-"Fingeravtrycket var inte centrerat på censorn. Lyft fingret och tryck på "
+"Fingeravtrycket var inte centrerat på sensorn. Lyft fingret och tryck på "
 "sensorn igen."
 
 #: src/Dialogs/FingerprintDialog.vala:149
@@ -187,11 +188,11 @@ msgstr "Det här fingeravtrycket är redan registrerat."
 
 #: src/Dialogs/FingerprintDialog.vala:161
 msgid "The fingerprint sensor was disconnected."
-msgstr "Fingeravtryckssensorn var bortkopplad."
+msgstr "Fingeravtryckssensorn var frånkopplad."
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
-msgstr "Något gick fel"
+msgstr "Någonting gick fel"
 
 #: src/Dialogs/FingerprintDialog.vala:166
 msgid "Cancel and try again"
@@ -221,7 +222,7 @@ msgstr "Ändringarna för gästsessionen kommer att tillämpas vid omstart"
 #: src/Views/GuestSettingsView.vala:98 src/Views/MainView.vala:158
 #: src/Views/MainView.vala:225
 msgid "Unable to acquire permission"
-msgstr "Kan inte få tillstånd"
+msgstr "Kan inte få behörighet"
 
 #: src/Views/GuestSettingsView.vala:99
 msgid ""
@@ -256,7 +257,7 @@ msgstr "Ett konto kan inte tas bort utan erforderlig systembehörighet."
 #: src/Views/MainView.vala:248
 #, c-format
 msgid "Removed “%s”"
-msgstr "Borttaget \"%s\""
+msgstr "Tog bort \"%s\""
 
 #: src/Views/MainView.vala:306
 msgid "Enabled"
@@ -276,7 +277,7 @@ msgstr "Du kan inte ändra detta för den nu aktiva användaren"
 
 #: src/Views/UserSettingsView.vala:56
 msgid "You cannot remove the last administrator's privileges"
-msgstr "Du kan inte ta bort den senaste administratörens rättigheter"
+msgstr "Du kan inte ta bort den senaste administratörens behörigheter"
 
 #: src/Views/UserSettingsView.vala:128
 msgid "Standard"
@@ -284,7 +285,7 @@ msgstr "Standard"
 
 #: src/Views/UserSettingsView.vala:212
 msgid "Click to switch to Language & Region Settings"
-msgstr "Klicka för att växla till språk- och regioninställningar"
+msgstr "Klicka för att växla till språk- och regionsinställningar"
 
 #: src/Views/UserSettingsView.vala:225
 msgid "Log In automatically"
@@ -308,7 +309,7 @@ msgstr "Ta bort konto"
 
 #: src/Views/UserSettingsView.vala:321
 msgid "Some settings require administrator rights to be changed"
-msgstr "Vissa inställningar kräver administratörsrättigheter för att ändras"
+msgstr "Vissa inställningar kräver administratörsbehörighet för att ändras"
 
 #: src/Views/UserSettingsView.vala:492
 msgid "Enable Account"
@@ -329,7 +330,7 @@ msgstr "Ta bort"
 
 #: src/Widgets/Popovers/AvatarPopover.vala:43
 msgid "Set from File…"
-msgstr "Ange från fil…"
+msgstr "Ställ in från fil…"
 
 #: src/Widgets/Popovers/AvatarPopover.vala:75
 msgid "Images"
