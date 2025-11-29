@@ -3,11 +3,10 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2025-06-03 03:55+0000\n"
+"PO-Revision-Date: 2025-11-30 18:55+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://"
-"l10n.elementaryos.org/projects/settings/switchboard-plug-useraccounts/"
-"zh_Hant/>\n"
+"l10n.elementaryos.org/projects/settings/useraccounts/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -118,81 +117,81 @@ msgstr "使用者名稱僅能有小寫字母和數字，不能有空格"
 
 #: src/Dialogs/FingerprintDialog.vala:41
 msgid "Enrolling fingerprint"
-msgstr ""
+msgstr "正在註冊指紋"
 
 #: src/Dialogs/FingerprintDialog.vala:46
 msgid "Touch the fingerprint sensor to begin."
-msgstr ""
+msgstr "請輕觸指紋感應器來開始。"
 
 #: src/Dialogs/FingerprintDialog.vala:82
 msgid "Finish"
-msgstr ""
+msgstr "完成"
 
 #: src/Dialogs/FingerprintDialog.vala:88
 msgid "Fingerprint device not available."
-msgstr ""
+msgstr "指紋裝置無法使用。"
 
 #: src/Dialogs/FingerprintDialog.vala:122
 msgid "Enrollment complete"
-msgstr ""
+msgstr "註冊完成"
 
 #: src/Dialogs/FingerprintDialog.vala:123
 msgid "This fingerprint can now be used for authentication."
-msgstr ""
+msgstr "現在驗證時可以使用這個指紋了。"
 
 #: src/Dialogs/FingerprintDialog.vala:127
 msgid "Enrolling failed. Cancel and try again."
-msgstr ""
+msgstr "註冊失敗。請取消後再試一次。"
 
 #: src/Dialogs/FingerprintDialog.vala:134
 msgid "Stage passed. Lift your finger and touch the sensor again."
-msgstr ""
+msgstr "註冊步驟成功。請將手指放開後再次碰觸感應器。"
 
 #: src/Dialogs/FingerprintDialog.vala:137
 msgid "Trying to scan again"
-msgstr ""
+msgstr "正在嘗試再次掃描"
 
 #: src/Dialogs/FingerprintDialog.vala:140
 msgid "The swipe was too short. Lift your finger and swipe the sensor again."
-msgstr ""
+msgstr "滑動太短。請將手指放開後再次在感應器上滑動。"
 
 #: src/Dialogs/FingerprintDialog.vala:143
 msgid "The touch was too fast. Lift your finger and touch the sensor again."
-msgstr ""
+msgstr "碰觸太快。請將手指放開後再次碰觸感應器。"
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
 "The fingerprint was not centered on the censor. Lift your finger and touch "
 "the sensor again."
-msgstr ""
+msgstr "指紋沒有在感應器中央。請將手指放開後再次碰觸感應器。"
 
 #: src/Dialogs/FingerprintDialog.vala:149
 msgid "Remove your finger and try again"
-msgstr ""
+msgstr "請將手指移開後再試一次"
 
 #: src/Dialogs/FingerprintDialog.vala:153
 msgid "Can't remember additional fingerprints"
-msgstr ""
+msgstr "無法再註冊更多指紋"
 
 #: src/Dialogs/FingerprintDialog.vala:154
 msgid "Forget a saved fingerprint and try again."
-msgstr ""
+msgstr "請刪除一個已儲存的指紋後再試一次。"
 
 #: src/Dialogs/FingerprintDialog.vala:158
 msgid "This fingerprint is already enrolled."
-msgstr ""
+msgstr "這個指紋已註冊。"
 
 #: src/Dialogs/FingerprintDialog.vala:161
 msgid "The fingerprint sensor was disconnected."
-msgstr ""
+msgstr "指紋感應器已中斷連接。"
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
-msgstr ""
+msgstr "發生錯誤"
 
 #: src/Dialogs/FingerprintDialog.vala:166
 msgid "Cancel and try again"
-msgstr ""
+msgstr "請取消後再試一次"
 
 #: src/Views/GuestSettingsView.vala:14
 msgid ""
@@ -286,11 +285,11 @@ msgstr "自動登入"
 
 #: src/Views/UserSettingsView.vala:236
 msgid "Set Up Fingerprint…"
-msgstr ""
+msgstr "設定指紋…"
 
 #: src/Views/UserSettingsView.vala:241
 msgid "Remove Fingerprint"
-msgstr ""
+msgstr "刪除指紋"
 
 #: src/Views/UserSettingsView.vala:287
 msgid "Change Password…"
