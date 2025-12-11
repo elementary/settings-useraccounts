@@ -143,7 +143,7 @@ public class SwitchboardPlugUserAccounts.FingerprintDialog : Granite.Dialog {
                 status_label.label = _("The touch was too fast. Lift your finger and touch the sensor again.");
                 break;
             case "enroll-finger-not-centered":
-                status_label.label = _("The fingerprint was not centered on the censor. Lift your finger and touch the sensor again.");
+                status_label.label = _("The fingerprint was not centered on the sensor. Lift your finger and touch the sensor again.");
                 break;
             case "enroll-remove-and-retry":
                 status_label.label = _("Remove your finger and try again");
