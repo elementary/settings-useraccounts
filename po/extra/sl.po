@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2024-08-07 18:16+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2026-01-22 22:55+0000\n"
+"Last-Translator: Jernej Virag <jernej@virag.si>\n"
+"Language-Team: Slovenian <https://l10n.elementaryos.org/projects/settings/"
 "user-accounts-plug-extra/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
@@ -18,19 +18,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: data/useraccounts.policy.in.in:10
 msgid "Manage user accounts"
-msgstr ""
+msgstr "Upravljaj uporabniške račune"
 
 #: data/useraccounts.policy.in.in:11
 msgid "Authentication is required to change user data"
-msgstr ""
+msgstr "Za spremembo uporabniških podatkov je potrebno geslo"
 
 #: data/useraccounts.metainfo.xml.in:10
 msgid "User Accounts Settings"
-msgstr ""
+msgstr "Nastavitve uporabniških računov"
 
 #: data/useraccounts.metainfo.xml.in:11
 msgid ""
