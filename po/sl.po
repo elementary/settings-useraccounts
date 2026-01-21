@@ -3,17 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2018-03-21 19:53+0000\n"
+"PO-Revision-Date: 2026-01-22 22:55+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
-"Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-useraccounts/sl/>\n"
+"Language-Team: Slovenian <https://l10n.elementaryos.org/projects/settings/"
+"useraccounts/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-09 06:00+0000\n"
 
 #: src/Plug.vala:37
@@ -26,29 +26,24 @@ msgid ""
 msgstr "Nastavitve uporabniških računov, gesel in drugih dovoljenj"
 
 #: src/Plug.vala:82
-#, fuzzy
 msgid "Avatar"
-msgstr "Spremeni sliko"
+msgstr "Slika"
 
 #: src/Plug.vala:83
-#, fuzzy
 msgid "Full name"
 msgstr "Polno ime"
 
 #: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
-#, fuzzy
 msgid "Account type"
-msgstr "Vrsta računa:"
+msgstr "Vrsta računa"
 
 #: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
-#, fuzzy
 msgid "Language"
-msgstr "Jezik:"
+msgstr "Jezik"
 
 #: src/Plug.vala:86
-#, fuzzy
 msgid "Log in automatically"
-msgstr "Prijavi samodejno:"
+msgstr "Samodejna prijava"
 
 #: src/Plug.vala:87 src/Dialogs/ChangePasswordDialog.vala:76
 msgid "Change Password"
@@ -61,11 +56,11 @@ msgstr "Seja za goste"
 
 #: src/Dialogs/AvatarDialog.vala:30
 msgid "Crop & Position"
-msgstr ""
+msgstr "Obreži in premakni"
 
 #: src/Dialogs/AvatarDialog.vala:31
 msgid "Choose the part of the image to use as an avatar."
-msgstr ""
+msgstr "Izberite del slike, ki bo vaš avatar."
 
 #: src/Dialogs/AvatarDialog.vala:38
 msgid "Change Avatar"
@@ -99,7 +94,7 @@ msgstr "Skrbnik"
 
 #: src/Dialogs/NewUserDialog.vala:22
 msgid "Account Type"
-msgstr "Vrsta računa:"
+msgstr "Vrsta računa"
 
 #: src/Dialogs/NewUserDialog.vala:31
 msgid "Full Name"
@@ -124,39 +119,39 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:41
 msgid "Enrolling fingerprint"
-msgstr ""
+msgstr "Dodajanje prstnega odtisa"
 
 #: src/Dialogs/FingerprintDialog.vala:46
 msgid "Touch the fingerprint sensor to begin."
-msgstr ""
+msgstr "Dotaknite se senzorja za prstni odtis."
 
 #: src/Dialogs/FingerprintDialog.vala:82
 msgid "Finish"
-msgstr ""
+msgstr "Dokončaj"
 
 #: src/Dialogs/FingerprintDialog.vala:88
 msgid "Fingerprint device not available."
-msgstr ""
+msgstr "Senzor prstnega odtisa ni na voljo."
 
 #: src/Dialogs/FingerprintDialog.vala:122
 msgid "Enrollment complete"
-msgstr ""
+msgstr "Dodajanje končano"
 
 #: src/Dialogs/FingerprintDialog.vala:123
 msgid "This fingerprint can now be used for authentication."
-msgstr ""
+msgstr "Ta prstni odtis se zdaj lahko uporablja za prijavo."
 
 #: src/Dialogs/FingerprintDialog.vala:127
 msgid "Enrolling failed. Cancel and try again."
-msgstr ""
+msgstr "Dodajanje spodletelo. Poskusite znova."
 
 #: src/Dialogs/FingerprintDialog.vala:134
 msgid "Stage passed. Lift your finger and touch the sensor again."
-msgstr ""
+msgstr "Preverjanje uspešno. Dvignite prst in se ponovno dotaknite senzorja."
 
 #: src/Dialogs/FingerprintDialog.vala:137
 msgid "Trying to scan again"
-msgstr ""
+msgstr "Ponovno poskušanje branja"
 
 #: src/Dialogs/FingerprintDialog.vala:140
 msgid "The swipe was too short. Lift your finger and swipe the sensor again."
