@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2024-10-22 06:26+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-useraccounts/nl/>\n"
+"PO-Revision-Date: 2026-01-02 17:55+0000\n"
+"Last-Translator: Bas Ernst <50556177+ErnstBas@users.noreply.github.com>\n"
+"Language-Team: Dutch <https://l10n.elementaryos.org/projects/settings/"
+"useraccounts/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-09 05:59+0000\n"
 
 #: src/Plug.vala:37
@@ -120,81 +120,85 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:41
 msgid "Enrolling fingerprint"
-msgstr ""
+msgstr "Vingerafdruk registreren"
 
 #: src/Dialogs/FingerprintDialog.vala:46
 msgid "Touch the fingerprint sensor to begin."
-msgstr ""
+msgstr "Raak de vingerafdruksensor aan om te beginnen."
 
 #: src/Dialogs/FingerprintDialog.vala:82
 msgid "Finish"
-msgstr ""
+msgstr "Beëindigen"
 
 #: src/Dialogs/FingerprintDialog.vala:88
 msgid "Fingerprint device not available."
-msgstr ""
+msgstr "Vingerafdrukapparaat is niet beschikbaar."
 
 #: src/Dialogs/FingerprintDialog.vala:122
 msgid "Enrollment complete"
-msgstr ""
+msgstr "Registratie compleet"
 
 #: src/Dialogs/FingerprintDialog.vala:123
 msgid "This fingerprint can now be used for authentication."
-msgstr ""
+msgstr "Deze vingerafdruk kan nu gebruikt worden voor authenticatie."
 
 #: src/Dialogs/FingerprintDialog.vala:127
 msgid "Enrolling failed. Cancel and try again."
-msgstr ""
+msgstr "Registratie mislukt. Afbreken en opnieuw proberen."
 
 #: src/Dialogs/FingerprintDialog.vala:134
 msgid "Stage passed. Lift your finger and touch the sensor again."
-msgstr ""
+msgstr "Fase voltooid. Til je vinger op en raak de sensor opnieuw aan."
 
 #: src/Dialogs/FingerprintDialog.vala:137
 msgid "Trying to scan again"
-msgstr ""
+msgstr "Opnieuw proberen te scannen"
 
 #: src/Dialogs/FingerprintDialog.vala:140
 msgid "The swipe was too short. Lift your finger and swipe the sensor again."
 msgstr ""
+"De veegbeweging was te kort. Til je vinger op en veeg opnieuw over de sensor."
 
 #: src/Dialogs/FingerprintDialog.vala:143
 msgid "The touch was too fast. Lift your finger and touch the sensor again."
 msgstr ""
+"De aanraking was te snel. Til je vinger op en raak de sensor opnieuw aan."
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
 "The fingerprint was not centered on the censor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
+"De vingerafdruk was niet gecentreerd op de sensor. Til je vinger op en raak "
+"de sensor opnieuw aan."
 
 #: src/Dialogs/FingerprintDialog.vala:149
 msgid "Remove your finger and try again"
-msgstr ""
+msgstr "Haal je vinger weg en probeer het opnieuw"
 
 #: src/Dialogs/FingerprintDialog.vala:153
 msgid "Can't remember additional fingerprints"
-msgstr ""
+msgstr "Kan geen extra vingerafdrukken herinneren"
 
 #: src/Dialogs/FingerprintDialog.vala:154
 msgid "Forget a saved fingerprint and try again."
-msgstr ""
+msgstr "Vergeet een opgeslagen vingerafdruk en probeer het opnieuw."
 
 #: src/Dialogs/FingerprintDialog.vala:158
 msgid "This fingerprint is already enrolled."
-msgstr ""
+msgstr "Deze vingerafdruk is al geregistreerd."
 
 #: src/Dialogs/FingerprintDialog.vala:161
 msgid "The fingerprint sensor was disconnected."
-msgstr ""
+msgstr "De vingerafdruksensor was losgekoppeld."
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
-msgstr ""
+msgstr "Iets is misgegaan"
 
 #: src/Dialogs/FingerprintDialog.vala:166
 msgid "Cancel and try again"
-msgstr ""
+msgstr "Afbreken en opnieuw proberen"
 
 #: src/Views/GuestSettingsView.vala:14
 msgid ""
@@ -300,11 +304,11 @@ msgstr "Automatisch inloggen"
 
 #: src/Views/UserSettingsView.vala:236
 msgid "Set Up Fingerprint…"
-msgstr ""
+msgstr "Vingerafdruk instellen…"
 
 #: src/Views/UserSettingsView.vala:241
 msgid "Remove Fingerprint"
-msgstr ""
+msgstr "Vingerafdruk verwijderen"
 
 #: src/Views/UserSettingsView.vala:287
 msgid "Change Password…"

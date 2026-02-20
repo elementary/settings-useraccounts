@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2025-09-16 16:53+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2026-01-02 17:55+0000\n"
+"Last-Translator: Bas Ernst <50556177+ErnstBas@users.noreply.github.com>\n"
 "Language-Team: Dutch <https://l10n.elementaryos.org/projects/settings/"
 "user-accounts-plug-extra/nl/>\n"
 "Language: nl\n"
@@ -49,7 +49,7 @@ msgstr "Verbeteringen:"
 
 #: data/useraccounts.metainfo.xml.in:36
 msgid "Redesign to make hint text more obvious"
-msgstr ""
+msgstr "Herontwerp om de hinttekst duidelijker te maken"
 
 #: data/useraccounts.metainfo.xml.in:37
 msgid "Restore sidebar position"
@@ -70,14 +70,14 @@ msgid "Fixes:"
 msgstr "Oplossingen:"
 
 #: data/useraccounts.metainfo.xml.in:71 data/useraccounts.metainfo.xml.in:85
-#, fuzzy
-#| msgid "Get permission on demand for enabling or disabling accounts"
 msgid "Update permissions when enabling and disabling accounts"
-msgstr "Vraag om toestemming tijdens het activeren en deactiveren van accounts"
+msgstr "Toestemmingen bijwerken bij inschakelen en deactiveren van accounts"
 
 #: data/useraccounts.metainfo.xml.in:84
 msgid "Ensure user information in sidebar updates upon changes"
 msgstr ""
+"Zorg ervoor dat gebruikersinformatie in de zijbalk bijwerkt wordt bij "
+"veranderingen"
 
 #: data/useraccounts.metainfo.xml.in:89
 msgid "Support locales with 3-letter codes"
