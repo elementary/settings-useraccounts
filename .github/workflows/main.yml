@@ -23,7 +23,7 @@ jobs:
       - name: Install Dependencies
         run: |
           apt update
-          apt install -y libaccountsservice-dev libgirepository1.0-dev libgnome-desktop-4-dev libgranite-7-dev libadwaita-1-dev libpolkit-gobject-1-dev libpwquality-dev libswitchboard-3-dev meson policykit-1 valac
+          apt install -y libaccountsservice-dev libgirepository1.0-dev libgnome-desktop-4-dev libgranite-7-dev libadwaita-1-dev libpolkit-gobject-1-dev libpwquality-dev libswitchboard-3-dev meson valac
       - name: Build
         env:
           DESTDIR: out
