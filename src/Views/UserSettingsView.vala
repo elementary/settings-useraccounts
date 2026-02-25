@@ -74,6 +74,19 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
             default_regions = get_default_regions ();
 
+            var end_widget = new Gtk.WindowControls (END) {
+                valign = START
+            };
+
+
+            var headerbar = new Gtk.CenterBox () {
+                end_widget = end_widget
+            };
+
+            var window_handle = new Gtk.WindowHandle () {
+                child = headerbar
+            };
+
             avatar = new Adw.Avatar (48, user.real_name, true);
 
             var avatar_popover = new AvatarPopover (user, utils);
@@ -101,26 +114,12 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             };
             full_name_lock.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
-            var header_area = new Gtk.Grid () {
-                halign = CENTER
+            var avatar_grid = new Gtk.Grid () {
+                halign = START
             };
-            header_area.attach (avatar_button, 0, 0);
-            header_area.attach (full_name_entry, 1, 0);
-            header_area.attach (full_name_lock, 2, 0);
-            header_area.add_css_class ("header-area");
-
-            var end_widget = new Gtk.WindowControls (END) {
-                valign = START
-            };
-
-            var headerbar = new Gtk.CenterBox () {
-                center_widget = header_area,
-                end_widget = end_widget
-            };
-
-            var window_handle = new Gtk.WindowHandle () {
-                child = headerbar
-            };
+            avatar_grid.attach (avatar_button, 0, 0);
+            avatar_grid.attach (full_name_entry, 1, 0);
+            avatar_grid.attach (full_name_lock, 2, 0);
 
             user_type_dropdown = new Gtk.ComboBoxText () {
                 hexpand = true
@@ -330,6 +329,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             infobar.add_child (infobar_label);
 
             var content_box = new Gtk.Box (VERTICAL, 24);
+            content_box.append (avatar_grid);
             content_box.append (infobar);
             content_box.append (user_type_box);
             content_box.append (language_box);
@@ -360,7 +360,6 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             action_area.add_css_class ("buttonbox");
 
             var size_group = new Gtk.SizeGroup (HORIZONTAL);
-            size_group.add_widget (header_area);
             size_group.add_widget (content_area);
 
             var scrolled = new Gtk.ScrolledWindow () {
