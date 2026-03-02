@@ -15,8 +15,9 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
 
     construct {
         var accounttype_combobox = new Gtk.ComboBoxText ();
-        accounttype_combobox.append_text (_("Standard User"));
-        accounttype_combobox.append_text (_("Administrator"));
+        accounttype_combobox.append_text (_("Adult (Standard)"));
+        accounttype_combobox.append_text (_("Adult (Administrator)"));
+        accounttype_combobox.append_text (_("Child"));
         accounttype_combobox.set_active (0);
 
         var accounttype_label = new Granite.HeaderLabel (_("Account Type")) {
@@ -30,6 +31,24 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
 
         var realname_label = new Granite.HeaderLabel (_("Full Name")) {
             mnemonic_widget = realname_entry
+        };
+
+        var dob_datepicker = new Granite.DatePicker () {
+            // elementary Icons birthday
+            date = new DateTime.from_unix_utc (1190401200)
+        };
+
+        var dob_header = new Granite.HeaderLabel (_("Date of Birth")) {
+            secondary_text = _("Age and birthday are never shared. Age range is shared with apps to provide appropriate experiences."),
+            margin_top = 12
+        };
+
+        var dob_box = new Granite.Box (VERTICAL, HALF);
+        dob_box.append (dob_header);
+        dob_box.append (dob_datepicker);
+
+        var dob_revealer = new Gtk.Revealer () {
+            child = dob_box
         };
 
         username_entry = new Granite.ValidatedEntry ();
@@ -52,6 +71,7 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
         form_box.append (new ErrorRevealer ("."));
         form_box.append (realname_label);
         form_box.append (realname_entry);
+        form_box.append (dob_revealer);
         form_box.append (new ErrorRevealer ("."));
         form_box.append (username_label);
         form_box.append (username_entry);
@@ -81,6 +101,10 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
 
         pw_editor.validation_changed.connect (() => {
             update_create_button ();
+        });
+
+        accounttype_combobox.changed.connect (() => {
+            dob_revealer.reveal_child = accounttype_combobox.active == 2;
         });
 
         response.connect ((response_id) => {
