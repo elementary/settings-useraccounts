@@ -8,11 +8,9 @@ plug_files = files(
     'Plug.vala',
     'Dialogs/AvatarDialog.vala',
     'Dialogs/ChangePasswordDialog.vala',
-    'Dialogs/FingerprintDialog.vala',
     'Dialogs/NewUserDialog.vala',
     'Misc/DeltaUser.vala',
     'Misc/UserUtils.vala',
-    'Misc/FPUtils.vala',
     'Misc/Utils.vala',
     'Views/GuestSettingsView.vala',
     'Views/MainView.vala',
@@ -28,6 +26,16 @@ run_passwd_files = files(
     'run-passwd.c',
     'run-passwd.h'
 )
+
+args = []
+if get_option('biometrics')
+    args += '--define=BIOMETRICS'
+
+    plug_files += files(
+        'Dialogs' / 'FingerprintDialog.vala',
+        'Misc' /' FPUtils.vala'
+    )
+endif
 
 shared_module(
     meson.project_name(),
@@ -51,6 +59,7 @@ shared_module(
         posix_dep,
         switchboard_dep,
     ],
+    vala_args: args,
     install: true,
     install_dir : join_paths(switchboard_plugsdir, 'system')
 )
