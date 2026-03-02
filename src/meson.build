@@ -31,10 +31,10 @@ args = []
 if get_option('biometrics')
     args += '--define=BIOMETRICS'
 
-plug_files += files(
-    'Dialogs' / 'FingerprintDialog.vala',
-    'Misc' /' FPUtils.vala'
-)
+    plug_files += files(
+        'Dialogs' / 'FingerprintDialog.vala',
+        'Misc' /' FPUtils.vala'
+    )
 endif
 
 shared_module(
