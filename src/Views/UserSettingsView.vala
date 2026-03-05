@@ -23,8 +23,9 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
         private UserUtils utils;
         private DeltaUser delta_user;
+#if BIOMETRICS
         private FPUtils fp_utils;
-
+#endif
         private Gtk.ListStore language_store;
         private Gtk.ListStore region_store;
 
@@ -66,11 +67,13 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         construct {
             utils = new UserUtils (user, this);
             delta_user = new DeltaUser (user);
+#if BIOMETRICS
             try {
                 fp_utils = new FPUtils ();
             } catch (Error e) {
                 warning ("Fingerprint reader not available: %s", e.message);
             }
+#endif
 
             default_regions = get_default_regions ();
 
@@ -232,6 +235,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             autologin_box.append (autologin_switch);
 
             Gtk.Box fp_box;
+#if BIOMETRICS
             if (fp_utils != null) {
                 fingerprint_button = new Gtk.Button.with_label (_("Set Up Fingerprint…")) {
                     sensitive = false
@@ -283,6 +287,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                     }
                 });
             }
+#endif
 
             password_button = new Gtk.Button.with_label (_("Change Password…"));
             password_button.clicked.connect (() => {
@@ -409,10 +414,12 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 user_type_dropdown.sensitive = false;
                 password_button.sensitive = false;
                 autologin_switch.sensitive = false;
+#if BIOMETRICS
                 if (fp_utils != null) {
                     remove_fp_button.sensitive = false;
                     fingerprint_button.sensitive = false;
                 }
+#endif
 
                 autologin_label.secondary_text = NO_PERMISSION_STRING;
                 user_type_label.secondary_text = NO_PERMISSION_STRING;
@@ -420,10 +427,12 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
             lang_label.secondary_text = null;
 
+#if BIOMETRICS
             if (fp_utils != null) {
                 remove_fp_button.sensitive = current_user && fp_utils.is_enrolled ();
                 fingerprint_button.sensitive = current_user;
             }
+#endif
 
             if (current_user || allowed) {
                 full_name_entry.sensitive = true;
