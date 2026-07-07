@@ -58,9 +58,14 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
         form_box.append (username_error_revealer);
         form_box.append (pw_editor);
 
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = form_box
+        };
+
         modal = true;
+        default_height = 520;
         default_width = 350;
-        get_content_area ().append (form_box);
+        get_content_area ().append (scrolled);
 
         var cancel_button = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
