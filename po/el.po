@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2026-06-29 01:01+0000\n"
+"PO-Revision-Date: 2026-07-10 14:00+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/el/>\n"
@@ -192,11 +192,11 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
-msgstr ""
+msgstr "Κάτι πήγε στραβά"
 
 #: src/Dialogs/FingerprintDialog.vala:166
 msgid "Cancel and try again"
-msgstr ""
+msgstr "Ακύρωση και δοκιμή ξανά"
 
 #: src/Views/GuestSettingsView.vala:14
 msgid ""
@@ -204,23 +204,22 @@ msgid ""
 "a password."
 msgstr ""
 "Η συνεδρία επισκέπτη επιτρέπει σε κάποιον να χρησιμοποιήσει έναν προσωρινό "
-"προεπιλεγμένο λογαριασμό χωρίς συνθηματικό."
+"προεπιλεγμένο λογαριασμό χωρίς κωδικό πρόσβασης."
 
 #: src/Views/GuestSettingsView.vala:15
 msgid "Once they log out, all of their settings and data will be deleted."
-msgstr ""
-"Μόλις αποσυνδεθούν, όλες οι ρυθμίσεις και τα δεδομένα τους θα διαγραφούν."
+msgstr "Μόλις αποσυνδεθεί, όλες οι ρυθμίσεις και τα δεδομένα του θα διαγραφούν."
 
 #: src/Views/GuestSettingsView.vala:26
 msgid "Log In automatically:"
-msgstr "Συνδεθείτε αυτόματα:"
+msgstr "Αυτόματη σύνδεση:"
 
 #: src/Views/GuestSettingsView.vala:36
 msgid ""
 "Guest session changes will not take effect until you restart your system"
 msgstr ""
-"Οι αλλαγές στη συνεδρία επισκέπτη δε θα τεθούν σε ισχύ μέχρι να "
-"επανεκκινήσετε το σύστημα σας"
+"Οι αλλαγές στη συνεδρία επισκέπτη δεν θα τεθούν σε ισχύ μέχρι να "
+"επανεκκινήσετε το σύστημά σας"
 
 #: src/Views/GuestSettingsView.vala:98 src/Views/MainView.vala:158
 #: src/Views/MainView.vala:225
