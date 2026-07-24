@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2026-07-10 14:00+0000\n"
+"PO-Revision-Date: 2026-07-25 20:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/el/>\n"
@@ -32,7 +32,6 @@ msgid "Avatar"
 msgstr "Αλλαγή εικόνας"
 
 #: src/Plug.vala:83
-#, fuzzy
 msgid "Full name"
 msgstr "Ονοματεπώνυμο"
 
@@ -317,16 +316,12 @@ msgid "Some settings require administrator rights to be changed"
 msgstr "Κάποιες ρυθμίσεις απαιτούν δικαιώματα διαχειριστή για να αλλάξουν"
 
 #: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
 msgid "Enable Account"
-msgstr "Ενεργοποίηση λογαριασμού χρήστη"
+msgstr "Ενεργοποίηση λογαριασμού"
 
 #: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
 msgid "Disable Account"
-msgstr "Απενεργοποίηση λογαριασμού χρήστη"
+msgstr "Απενεργοποίηση λογαριασμού"
 
 #: src/Views/UserSettingsView.vala:658
 #, c-format
@@ -359,9 +354,8 @@ msgid "Choose a Password"
 msgstr "Αλλαγή συνθηματικού"
 
 #: src/Widgets/PasswordEditor.vala:60
-#, fuzzy
 msgid "Confirm Password"
-msgstr "Επιβεβαίωση νέου συνθηματικού"
+msgstr "Επιβεβαίωση κωδικού πρόσβασης"
 
 #: src/Widgets/PasswordEditor.vala:67
 msgid "Show passwords"
