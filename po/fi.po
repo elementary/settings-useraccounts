@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2024-12-02 13:16+0000\n"
+"PO-Revision-Date: 2026-03-22 15:55+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-useraccounts/fi/>\n"
+"Language-Team: Finnish <https://l10n.elementaryos.org/projects/settings/"
+"useraccounts/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.11.4\n"
 "X-Launchpad-Export-Date: 2017-02-09 06:00+0000\n"
 
 #: src/Plug.vala:37
@@ -121,31 +121,31 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:41
 msgid "Enrolling fingerprint"
-msgstr ""
+msgstr "Rekisteröidään sormenjälki"
 
 #: src/Dialogs/FingerprintDialog.vala:46
 msgid "Touch the fingerprint sensor to begin."
-msgstr ""
+msgstr "Kosketa sormenjälkianturia aloittaaksesi."
 
 #: src/Dialogs/FingerprintDialog.vala:82
 msgid "Finish"
-msgstr ""
+msgstr "Valmis"
 
 #: src/Dialogs/FingerprintDialog.vala:88
 msgid "Fingerprint device not available."
-msgstr ""
+msgstr "Sormenjälkilaite ei ole käytettävissä."
 
 #: src/Dialogs/FingerprintDialog.vala:122
 msgid "Enrollment complete"
-msgstr ""
+msgstr "Rekisteröinti onnistui"
 
 #: src/Dialogs/FingerprintDialog.vala:123
 msgid "This fingerprint can now be used for authentication."
-msgstr ""
+msgstr "Tätä sormenjälkeä voi nyt käyttää tunnistautumiseen."
 
 #: src/Dialogs/FingerprintDialog.vala:127
 msgid "Enrolling failed. Cancel and try again."
-msgstr ""
+msgstr "Rekisteröinti epäonnistui. Peru ja yritä uudelleen."
 
 #: src/Dialogs/FingerprintDialog.vala:134
 msgid "Stage passed. Lift your finger and touch the sensor again."
@@ -181,23 +181,23 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:154
 msgid "Forget a saved fingerprint and try again."
-msgstr ""
+msgstr "Unohda tallennettu sormenjälki ja yritä uudelleen."
 
 #: src/Dialogs/FingerprintDialog.vala:158
 msgid "This fingerprint is already enrolled."
-msgstr ""
+msgstr "Tämä sormenjälki on jo rekisteröity."
 
 #: src/Dialogs/FingerprintDialog.vala:161
 msgid "The fingerprint sensor was disconnected."
-msgstr ""
+msgstr "Yhteys sormenjälkianturiin katkaistiin."
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
-msgstr ""
+msgstr "Jokin meni pieleen"
 
 #: src/Dialogs/FingerprintDialog.vala:166
 msgid "Cancel and try again"
-msgstr ""
+msgstr "Peru ja yritä uudelleen"
 
 #: src/Views/GuestSettingsView.vala:14
 msgid ""
@@ -297,11 +297,11 @@ msgstr "Kirjaudu automaattisesti"
 
 #: src/Views/UserSettingsView.vala:236
 msgid "Set Up Fingerprint…"
-msgstr ""
+msgstr "Määritä sormenjälki…"
 
 #: src/Views/UserSettingsView.vala:241
 msgid "Remove Fingerprint"
-msgstr ""
+msgstr "Poista sormenjälki"
 
 #: src/Views/UserSettingsView.vala:287
 msgid "Change Password…"
