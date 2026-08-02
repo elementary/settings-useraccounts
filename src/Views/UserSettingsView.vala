@@ -43,7 +43,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         private Gtk.ComboBox region_box;
         private Gtk.Button language_button;
         private Gtk.Switch autologin_switch;
-        private Gtk.Switch disable_switch;
+        private Gtk.Switch lock_switch;
         private Gtk.InfoBar infobar;
 
         //lock widgets
@@ -114,7 +114,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             };
             full_name_lock.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
-            disable_switch = new Gtk.Switch () {
+            lock_switch = new Gtk.Switch () {
                 action_name = "user.enable",
                 tooltip_text = _("Account Lock"),
                 valign = START
@@ -126,7 +126,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             header_area.attach (avatar_button, 0, 0);
             header_area.attach (full_name_entry, 1, 0);
             header_area.attach (full_name_lock, 2, 0);
-            header_area.attach (disable_switch, 3, 0);
+            header_area.attach (lock_switch, 3, 0);
             header_area.add_css_class ("header-area");
 
             var end_widget = new Gtk.WindowControls (END) {
@@ -399,7 +399,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 remove_lock.tooltip_text = CURRENT_USER_STRING;
 
                 enable_action.set_enabled (false);
-                disable_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
+                lock_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
                     _("Account Lock"),
                     CURRENT_USER_STRING
                 );
@@ -408,7 +408,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 remove_lock.tooltip_text = LAST_ADMIN_STRING;
 
                 enable_action.set_enabled (false);
-                disable_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
+                lock_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
                     _("Account Lock"),
                     LAST_ADMIN_STRING
                 );
