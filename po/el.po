@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2026-07-25 20:01+0000\n"
+"PO-Revision-Date: 2026-08-30 19:01+0000\n"
 "Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
 "Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/el/>\n"
@@ -121,7 +121,7 @@ msgstr "Μπορεί μόνο να περιέχει πεζά γράμματα, �
 
 #: src/Dialogs/FingerprintDialog.vala:41
 msgid "Enrolling fingerprint"
-msgstr ""
+msgstr "Καταχώριση δακτυλικού αποτυπώματος"
 
 #: src/Dialogs/FingerprintDialog.vala:46
 msgid "Touch the fingerprint sensor to begin."
