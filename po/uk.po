@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2026-09-03 00:01+0000\n"
+"PO-Revision-Date: 2026-09-11 22:01+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/uk/>\n"
@@ -148,11 +148,11 @@ msgstr "Збій запису. Скасуйте і повторіть спроб
 
 #: src/Dialogs/FingerprintDialog.vala:134
 msgid "Stage passed. Lift your finger and touch the sensor again."
-msgstr ""
+msgstr "Етап пройдено. Піднесіть палець і знову торкніться датчика."
 
 #: src/Dialogs/FingerprintDialog.vala:137
 msgid "Trying to scan again"
-msgstr ""
+msgstr "Повтор спроби сканування"
 
 #: src/Dialogs/FingerprintDialog.vala:140
 msgid "The swipe was too short. Lift your finger and swipe the sensor again."
