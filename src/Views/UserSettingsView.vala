@@ -117,7 +117,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             lock_switch = new Gtk.Switch () {
                 action_name = "user.enable",
                 tooltip_text = _("Account Lock"),
-                valign = START
+                valign = CENTER
             };
 
             var header_area = new Gtk.Grid () {
