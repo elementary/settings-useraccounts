@@ -63,7 +63,7 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
         };
 
         modal = true;
-        default_height = 520;
+        default_height = 560;
         default_width = 350;
         get_content_area ().append (scrolled);
 
