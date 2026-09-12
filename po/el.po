@@ -3,15 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-15 19:30+0000\n"
-"PO-Revision-Date: 2017-02-13 13:45+0000\n"
-"Last-Translator: Christos Iatropoulos <Unknown>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2026-08-30 19:01+0000\n"
+"Last-Translator: Jim Spentzos <jimspentzos2000@gmail.com>\n"
+"Language-Team: Greek <https://l10n.elementaryos.org/projects/settings/"
+"useraccounts/el/>\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-14 06:01+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Plug.vala:37
 msgid "User Accounts"
@@ -30,24 +32,20 @@ msgid "Avatar"
 msgstr "Αλλαγή εικόνας"
 
 #: src/Plug.vala:83
-#, fuzzy
 msgid "Full name"
 msgstr "Ονοματεπώνυμο"
 
 #: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
-#, fuzzy
 msgid "Account type"
-msgstr "Τύπος λογαριασμού:"
+msgstr "Τύπος λογαριασμού"
 
 #: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
-#, fuzzy
 msgid "Language"
-msgstr "Γλώσσα:"
+msgstr "Γλώσσα"
 
 #: src/Plug.vala:86
-#, fuzzy
 msgid "Log in automatically"
-msgstr "Συνδεθείτε αυτόματα:"
+msgstr "Αυτόματη σύνδεση"
 
 #: src/Plug.vala:87 src/Dialogs/ChangePasswordDialog.vala:76
 msgid "Change Password"
@@ -97,9 +95,8 @@ msgid "Administrator"
 msgstr "Διαχειριστής"
 
 #: src/Dialogs/NewUserDialog.vala:22
-#, fuzzy
 msgid "Account Type"
-msgstr "Τύπος λογαριασμού:"
+msgstr "Τύπος λογαριασμού"
 
 #: src/Dialogs/NewUserDialog.vala:31
 msgid "Full Name"
@@ -124,7 +121,7 @@ msgstr "Μπορεί μόνο να περιέχει πεζά γράμματα, �
 
 #: src/Dialogs/FingerprintDialog.vala:41
 msgid "Enrolling fingerprint"
-msgstr ""
+msgstr "Καταχώριση δακτυλικού αποτυπώματος"
 
 #: src/Dialogs/FingerprintDialog.vala:46
 msgid "Touch the fingerprint sensor to begin."
@@ -194,11 +191,11 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
-msgstr ""
+msgstr "Κάτι πήγε στραβά"
 
 #: src/Dialogs/FingerprintDialog.vala:166
 msgid "Cancel and try again"
-msgstr ""
+msgstr "Ακύρωση και δοκιμή ξανά"
 
 #: src/Views/GuestSettingsView.vala:14
 msgid ""
@@ -206,23 +203,22 @@ msgid ""
 "a password."
 msgstr ""
 "Η συνεδρία επισκέπτη επιτρέπει σε κάποιον να χρησιμοποιήσει έναν προσωρινό "
-"προεπιλεγμένο λογαριασμό χωρίς συνθηματικό."
+"προεπιλεγμένο λογαριασμό χωρίς κωδικό πρόσβασης."
 
 #: src/Views/GuestSettingsView.vala:15
 msgid "Once they log out, all of their settings and data will be deleted."
-msgstr ""
-"Μόλις αποσυνδεθούν, όλες οι ρυθμίσεις και τα δεδομένα τους θα διαγραφούν."
+msgstr "Μόλις αποσυνδεθεί, όλες οι ρυθμίσεις και τα δεδομένα του θα διαγραφούν."
 
 #: src/Views/GuestSettingsView.vala:26
 msgid "Log In automatically:"
-msgstr "Συνδεθείτε αυτόματα:"
+msgstr "Αυτόματη σύνδεση:"
 
 #: src/Views/GuestSettingsView.vala:36
 msgid ""
 "Guest session changes will not take effect until you restart your system"
 msgstr ""
-"Οι αλλαγές στη συνεδρία επισκέπτη δε θα τεθούν σε ισχύ μέχρι να "
-"επανεκκινήσετε το σύστημα σας"
+"Οι αλλαγές στη συνεδρία επισκέπτη δεν θα τεθούν σε ισχύ μέχρι να "
+"επανεκκινήσετε το σύστημά σας"
 
 #: src/Views/GuestSettingsView.vala:98 src/Views/MainView.vala:158
 #: src/Views/MainView.vala:225
@@ -243,14 +239,12 @@ msgid "Other Accounts"
 msgstr "Άλλοι λογαριασμοί"
 
 #: src/Views/MainView.vala:38
-#, fuzzy
-#| msgid "Create user account"
 msgid "Create User Account…"
-msgstr "Δημιουργία λογαριασμού χρήστη"
+msgstr "Δημιουργία λογαριασμού χρήστη…"
 
 #: src/Views/MainView.vala:71
 msgid "Undo"
-msgstr ""
+msgstr "Αναίρεση"
 
 #: src/Views/MainView.vala:159
 msgid "A new account cannot be created without the required system permission."
@@ -267,11 +261,11 @@ msgstr ""
 
 #: src/Views/MainView.vala:306
 msgid "Enabled"
-msgstr "Ενεργοποιημένος"
+msgstr "Ενεργοποιημένο"
 
 #: src/Views/MainView.vala:308
 msgid "Disabled"
-msgstr "Απενεργοποιημένος"
+msgstr "Απενεργοποιημένο"
 
 #: src/Views/UserSettingsView.vala:54
 msgid "You do not have permission to change this"
@@ -298,10 +292,8 @@ msgid "Click to switch to Language & Region Settings"
 msgstr "Πατήστε για αλλαγή σε ρυθμίσεις γλώσσας και περιοχής"
 
 #: src/Views/UserSettingsView.vala:225
-#, fuzzy
-#| msgid "Log In automatically:"
 msgid "Log In automatically"
-msgstr "Συνδεθείτε αυτόματα:"
+msgstr "Αυτόματη σύνδεση"
 
 #: src/Views/UserSettingsView.vala:236
 msgid "Set Up Fingerprint…"
@@ -312,31 +304,24 @@ msgid "Remove Fingerprint"
 msgstr ""
 
 #: src/Views/UserSettingsView.vala:287
-#, fuzzy
 msgid "Change Password…"
-msgstr "Αλλαγή συνθηματικού"
+msgstr "Αλλαγή κωδικού πρόσβασης…"
 
 #: src/Views/UserSettingsView.vala:308
-#, fuzzy
-#| msgid "User Accounts"
 msgid "Remove Account"
-msgstr "Λογαριασμοί χρηστών"
+msgstr "Αφαίρεση λογαριασμού"
 
 #: src/Views/UserSettingsView.vala:321
 msgid "Some settings require administrator rights to be changed"
 msgstr "Κάποιες ρυθμίσεις απαιτούν δικαιώματα διαχειριστή για να αλλάξουν"
 
 #: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
 msgid "Enable Account"
-msgstr "Ενεργοποίηση λογαριασμού χρήστη"
+msgstr "Ενεργοποίηση λογαριασμού"
 
 #: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
 msgid "Disable Account"
-msgstr "Απενεργοποίηση λογαριασμού χρήστη"
+msgstr "Απενεργοποίηση λογαριασμού"
 
 #: src/Views/UserSettingsView.vala:658
 #, c-format
@@ -349,7 +334,7 @@ msgstr "Αφαίρεση"
 
 #: src/Widgets/Popovers/AvatarPopover.vala:43
 msgid "Set from File…"
-msgstr "Ορισμός από φάκελο..."
+msgstr "Ορισμός από αρχείο…"
 
 #: src/Widgets/Popovers/AvatarPopover.vala:75
 msgid "Images"
@@ -369,9 +354,8 @@ msgid "Choose a Password"
 msgstr "Αλλαγή συνθηματικού"
 
 #: src/Widgets/PasswordEditor.vala:60
-#, fuzzy
 msgid "Confirm Password"
-msgstr "Επιβεβαίωση νέου συνθηματικού"
+msgstr "Επιβεβαίωση κωδικού πρόσβασης"
 
 #: src/Widgets/PasswordEditor.vala:67
 msgid "Show passwords"

@@ -33,7 +33,7 @@ if get_option('biometrics')
 
     plug_files += files(
         'Dialogs' / 'FingerprintDialog.vala',
-        'Misc' /' FPUtils.vala'
+        'Misc' / 'FPUtils.vala'
     )
 endif
 
