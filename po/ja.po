@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 06:21+0000\n"
-"PO-Revision-Date: 2025-10-12 22:55+0000\n"
+"PO-Revision-Date: 2026-09-13 08:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/ja/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-09 06:00+0000\n"
 
 #: src/Plug.vala:37
@@ -163,10 +163,6 @@ msgid "The touch was too fast. Lift your finger and touch the sensor again."
 msgstr "タッチが速すぎます。指を離して再度センサーをタッチしてください。"
 
 #: src/Dialogs/FingerprintDialog.vala:146
-#, fuzzy
-#| msgid ""
-#| "The fingerprint was not centered on the censor. Lift your finger and "
-#| "touch the sensor again."
 msgid ""
 "The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
@@ -284,10 +280,8 @@ msgstr "管理者が唯一の場合、その権限は削除できません"
 
 #: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
 #: src/Views/UserSettingsView.vala:412
-#, fuzzy
-#| msgid "Account type"
 msgid "Account Lock"
-msgstr "アカウントの種類"
+msgstr "アカウントのロック"
 
 #: src/Views/UserSettingsView.vala:148
 msgid "Standard"
