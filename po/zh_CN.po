@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2025-08-03 04:55+0000\n"
 "Last-Translator: JieXu <xujie0739@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
@@ -33,11 +33,11 @@ msgstr "更改头像"
 msgid "Full name"
 msgstr "全名"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr "账户类型"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr "账户语言"
 
@@ -78,7 +78,7 @@ msgstr "点击以认证"
 msgid "Authentication failed"
 msgstr "认证失败"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "取消"
@@ -87,7 +87,7 @@ msgstr "取消"
 msgid "Standard User"
 msgstr "标准用户"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "管理员"
@@ -104,15 +104,15 @@ msgstr "姓名"
 msgid "Username"
 msgstr "用户名"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr "创建用户"
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "用户名已存在"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr "用户名只能包含无空格的小写字母和数字"
 
@@ -162,7 +162,7 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 
@@ -260,59 +260,58 @@ msgstr "已启用"
 msgid "Disabled"
 msgstr "已禁用"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr "您没有权限更改此项内容"
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "正在使用中的账户无法更改此项"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "您不能移除上一个管理员的权限"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "Account type"
+msgid "Account Lock"
+msgstr "账户类型"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "标准账户"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 msgid "Click to switch to Language & Region Settings"
 msgstr "点击切换到语言和区域设置"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 msgid "Log In automatically"
 msgstr "自动登录"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr "更改密码…"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 msgid "Remove Account"
 msgstr "移除帐户"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr "某些设置需要管理员权限才能更改"
 
-#: src/Views/UserSettingsView.vala:492
-msgid "Enable Account"
-msgstr "启用账户"
-
-#: src/Views/UserSettingsView.vala:495
-msgid "Disable Account"
-msgstr "禁用账户"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr "无法更改 %s 的密码"
@@ -352,6 +351,12 @@ msgstr "显示密码"
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "密码不一致"
+
+#~ msgid "Enable Account"
+#~ msgstr "启用账户"
+
+#~ msgid "Disable Account"
+#~ msgstr "禁用账户"
 
 #~ msgid "Account type:"
 #~ msgstr "账户类型："

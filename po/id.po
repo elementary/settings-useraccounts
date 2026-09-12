@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2023-05-23 19:06+0000\n"
 "Last-Translator: Faisal Rachmadin "
 "<frachmadin@users.noreply.l10n.elementary.io>\n"
@@ -34,11 +34,11 @@ msgstr "Gambar Profil"
 msgid "Full name"
 msgstr "Nama lengkap"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr "Tipe akun"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr "Bahasa"
 
@@ -79,7 +79,7 @@ msgstr "Tekan untuk mengotentikasi"
 msgid "Authentication failed"
 msgstr "Otentikasi gagal"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "Batal"
@@ -88,7 +88,7 @@ msgstr "Batal"
 msgid "Standard User"
 msgstr "Pengguna Standar"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "Administrator"
@@ -105,15 +105,15 @@ msgstr "Nama Lengkap"
 msgid "Username"
 msgstr "Nama Pengguna"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr "Buat Pengguna"
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "Nama pengguna sudah diambil"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr "Nama pengguna hanya boleh berisi huruf kecil dan angka, tanpa spasi"
 
@@ -163,7 +163,7 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 
@@ -267,69 +267,64 @@ msgstr "Diaktifkan"
 msgid "Disabled"
 msgstr "Nonaktifkan"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr "Anda tidak memiliki izin untuk mengubah ini"
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "Anda tidak dapat mengubah ini untuk pengguna yang sedang aktif"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "Anda tidak dapat menghapus hak istimewa administrator terakhir"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "Account type"
+msgid "Account Lock"
+msgstr "Tipe akun"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "Standar"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 #, fuzzy
 #| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
 msgstr "Klik untuk beralih ke Pengaturan Bahasa & Lokalisasi"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 #, fuzzy
 #| msgid "Log In automatically:"
 msgid "Log In automatically"
 msgstr "Masuk otomtis:"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr "Ganti Kata Sandi…"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 #, fuzzy
 #| msgid "User Accounts"
 msgid "Remove Account"
 msgstr "Akun Pengguna"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr "Beberapa pengaturan memerlukan hak administrator untuk diubah"
 
-#: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
-msgid "Enable Account"
-msgstr "Aktifkan Akun Pengguna"
-
-#: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
-msgid "Disable Account"
-msgstr "Nonaktifkan Akun Pengguna"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr ""
@@ -369,6 +364,16 @@ msgstr "Tampilkan kata sandi"
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "Kata sandi tidak cocok"
+
+#, fuzzy
+#~| msgid "Enable User Account"
+#~ msgid "Enable Account"
+#~ msgstr "Aktifkan Akun Pengguna"
+
+#, fuzzy
+#~| msgid "Disable User Account"
+#~ msgid "Disable Account"
+#~ msgstr "Nonaktifkan Akun Pengguna"
 
 #~ msgid "Account type:"
 #~ msgstr "Tipe akun:"

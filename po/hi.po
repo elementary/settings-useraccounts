@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2019-10-17 17:24+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Hindi <https://l10n.elementary.io/projects/switchboard/"
@@ -33,12 +33,12 @@ msgstr ""
 msgid "Full name"
 msgstr "पूरा नाम"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 #, fuzzy
 msgid "Account type"
 msgstr "खाता प्रकार:"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 #, fuzzy
 msgid "Language"
 msgstr "भाषा:"
@@ -80,7 +80,7 @@ msgstr ""
 msgid "Authentication failed"
 msgstr "सत्यापन असफल"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "रद्द"
@@ -89,7 +89,7 @@ msgstr "रद्द"
 msgid "Standard User"
 msgstr ""
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "प्रशासक"
@@ -107,15 +107,15 @@ msgstr "पूरा नाम"
 msgid "Username"
 msgstr "प्रयोक्ता नाम"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr ""
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr ""
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
 
@@ -165,7 +165,7 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 
@@ -265,66 +265,60 @@ msgstr "सक्षम"
 msgid "Disabled"
 msgstr "निष्क्रिय"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+msgid "Account Lock"
+msgstr "खाता प्रकार:"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "मानक"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 msgid "Click to switch to Language & Region Settings"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 msgid "Log In automatically"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 #, fuzzy
 msgid "Change Password…"
 msgstr "कूटशब्द बदलें"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 #, fuzzy
 #| msgid "User Accounts"
 msgid "Remove Account"
 msgstr "उपयोक्ता खाता"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "User Accounts"
-msgid "Enable Account"
-msgstr "उपयोक्ता खाता"
-
-#: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "User Accounts"
-msgid "Disable Account"
-msgstr "उपयोक्ता खाता"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr ""
@@ -365,6 +359,16 @@ msgstr ""
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "कूटशब्द मेल नहीं खाता है"
+
+#, fuzzy
+#~| msgid "User Accounts"
+#~ msgid "Enable Account"
+#~ msgstr "उपयोक्ता खाता"
+
+#, fuzzy
+#~| msgid "User Accounts"
+#~ msgid "Disable Account"
+#~ msgstr "उपयोक्ता खाता"
 
 #~ msgid "Account type:"
 #~ msgstr "खाता प्रकार:"

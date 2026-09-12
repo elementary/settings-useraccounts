@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2025-09-18 05:55+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementaryos.org/projects/settings/"
@@ -34,11 +34,11 @@ msgstr "Avatar"
 msgid "Full name"
 msgstr "Nom complet"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr "Tipus de compte"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr "Llengua"
 
@@ -79,7 +79,7 @@ msgstr "Premeu-ho per autenticar-vos"
 msgid "Authentication failed"
 msgstr "Ha fallat l'autenticació"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "Cancel·la"
@@ -88,7 +88,7 @@ msgstr "Cancel·la"
 msgid "Standard User"
 msgstr "Usuari estàndard"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "Administrador"
@@ -105,15 +105,15 @@ msgstr "Nom i cognoms"
 msgid "Username"
 msgstr "Nom d'usuari"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr "Crea un usuari"
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "El nom d'usuari ja existeix"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "El nom d'usuari només pot contenir lletres minúscules i números, sense "
@@ -168,8 +168,12 @@ msgstr ""
 "sobre el sensor."
 
 #: src/Dialogs/FingerprintDialog.vala:146
+#, fuzzy
+#| msgid ""
+#| "The fingerprint was not centered on the censor. Lift your finger and "
+#| "touch the sensor again."
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 "L'empremta no estava centrada al censor. Alceu el dit i torneu a tocar el "
@@ -275,59 +279,58 @@ msgstr "Habilitat"
 msgid "Disabled"
 msgstr "Inhabilitat"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr "No teniu permís per canviar això."
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "No podeu canviar aquesta opció per a l'usuari actiu"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "No podeu treure els permisos de l'últim compte administratiu"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "Account type"
+msgid "Account Lock"
+msgstr "Tipus de compte"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "Estàndard"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 msgid "Click to switch to Language & Region Settings"
 msgstr "Cliqueu per canviar als paràmetres de la llengua i la regió"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 msgid "Log In automatically"
 msgstr "Entra automàticament"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr "Configureu una empremta…"
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr "Suprimeix l'empremta"
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr "Canvia la contrasenya…"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 msgid "Remove Account"
 msgstr "Suprimeix el compte"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr "Alguns paràmetres necessiten permisos d'administrador per modificar-se"
 
-#: src/Views/UserSettingsView.vala:492
-msgid "Enable Account"
-msgstr "Habilita el compte"
-
-#: src/Views/UserSettingsView.vala:495
-msgid "Disable Account"
-msgstr "Inhabilita el compte"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr "No es pot canviar la contrasenya per a %s"
@@ -367,6 +370,12 @@ msgstr "Mostra les contrasenyes"
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "Les contrasenyes no coincideixen"
+
+#~ msgid "Enable Account"
+#~ msgstr "Habilita el compte"
+
+#~ msgid "Disable Account"
+#~ msgstr "Inhabilita el compte"
 
 #~ msgid "Account type:"
 #~ msgstr "Tipus de compte:"

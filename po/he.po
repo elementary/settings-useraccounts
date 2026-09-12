@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2025-10-06 12:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementaryos.org/projects/settings/"
@@ -32,11 +32,11 @@ msgstr "תמונת משתמש"
 msgid "Full name"
 msgstr "שם מלא"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr "סוג חשבון"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr "שפה"
 
@@ -77,7 +77,7 @@ msgstr "יש ללחוץ לאימות"
 msgid "Authentication failed"
 msgstr "האימות נכשל"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "ביטול"
@@ -86,7 +86,7 @@ msgstr "ביטול"
 msgid "Standard User"
 msgstr "משתמש רגיל"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "מנהל"
@@ -103,15 +103,15 @@ msgstr "שם מלא"
 msgid "Username"
 msgstr "שם משתמש"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr "יצירת משתמש"
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "שם המשתמש כבר תפוס"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr "שם משתמש יכול להכיל אותיות לטיניות קטנות, מספרים וללא רווחים"
 
@@ -160,8 +160,12 @@ msgid "The touch was too fast. Lift your finger and touch the sensor again."
 msgstr "הנגיעה הייתה מהירה מדי. יש להרים את האצבע ולגעת בחיישן שוב."
 
 #: src/Dialogs/FingerprintDialog.vala:146
+#, fuzzy
+#| msgid ""
+#| "The fingerprint was not centered on the censor. Lift your finger and "
+#| "touch the sensor again."
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 "טביעת האצבע לא הייתה ממורכזת על החיישן. יש להרים את האצבע ולגעת בחיישן שוב."
@@ -260,59 +264,58 @@ msgstr "פעיל"
 msgid "Disabled"
 msgstr "מושבתת"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr "אין לך הרשאה לשנות את זה"
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "לא ניתן לשנות זאת עבור המשתמש הנוכחי הפעיל"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "לא ניתן להסיר את הרשאות הניהול האחרונות"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "Account type"
+msgid "Account Lock"
+msgstr "סוג חשבון"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "רגיל"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 msgid "Click to switch to Language & Region Settings"
 msgstr "יש ללחוץ כדי לעבור להגדרות שפה ואזור"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 msgid "Log In automatically"
 msgstr "כניסה אוטומטית"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr "הגדרת טביעת אצבע…"
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr "הסרת טביעת אצבע"
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr "החלפת הסיסמה…"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 msgid "Remove Account"
 msgstr "הסרת חשבון"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr "לצורך שינוי של חלק מההגדרות נדרשות הרשאות ניהול"
 
-#: src/Views/UserSettingsView.vala:492
-msgid "Enable Account"
-msgstr "הפעלת חשבון"
-
-#: src/Views/UserSettingsView.vala:495
-msgid "Disable Account"
-msgstr "השבתת חשבון"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr "לא ניתן להחליף את הסיסמה של %s"
@@ -352,6 +355,12 @@ msgstr "הצגת הסיסמאות"
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "הסיסמאות אינן תואמות"
+
+#~ msgid "Enable Account"
+#~ msgstr "הפעלת חשבון"
+
+#~ msgid "Disable Account"
+#~ msgstr "השבתת חשבון"
 
 #~ msgid "Account type:"
 #~ msgstr "סוג החשבון:"
