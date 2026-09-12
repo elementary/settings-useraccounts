@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2020-10-24 13:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -34,11 +34,11 @@ msgstr "Avatar"
 msgid "Full name"
 msgstr "Nome completo"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr "Tipo di account"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr "Lingua"
 
@@ -79,7 +79,7 @@ msgstr "Premere per autenticare"
 msgid "Authentication failed"
 msgstr "Autenticazione fallita"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "Annulla"
@@ -88,7 +88,7 @@ msgstr "Annulla"
 msgid "Standard User"
 msgstr "Utente standard"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "Amministratore"
@@ -105,15 +105,15 @@ msgstr "Nome completo"
 msgid "Username"
 msgstr "Nome utente"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr "Crea utente"
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "Il nome utente è già stato preso"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Il nome utente può contenere solo lettere minuscole e numeri, senza spazi"
@@ -164,7 +164,7 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 
@@ -277,71 +277,66 @@ msgstr "Abilitato"
 msgid "Disabled"
 msgstr "Disabilitato"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr "Non disponi dei permessi necessari per cambiare questo parametro"
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "Non è possibile modificare questo parametro per l'utente attivo"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "Non è possibile rimuovere i privilegi dell'ultimo amministratore"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "Account type"
+msgid "Account Lock"
+msgstr "Tipo di account"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "Normale"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 #, fuzzy
 #| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
 msgstr "Clicca per passare alle impostazioni di lingua e regione"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 #, fuzzy
 #| msgid "Log In automatically:"
 msgid "Log In automatically"
 msgstr "Accesso automatico:"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr "Cambia password…"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 #, fuzzy
 #| msgid "User Accounts"
 msgid "Remove Account"
 msgstr "Account utente"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Alcune impostazioni richiedono i permessi di amministratore per essere "
 "modificate"
 
-#: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
-msgid "Enable Account"
-msgstr "Abilita account utente"
-
-#: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
-msgid "Disable Account"
-msgstr "Disattiva account utente"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr ""
@@ -381,6 +376,16 @@ msgstr "Mostra le password"
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "Le password non coincidono"
+
+#, fuzzy
+#~| msgid "Enable User Account"
+#~ msgid "Enable Account"
+#~ msgstr "Abilita account utente"
+
+#, fuzzy
+#~| msgid "Disable User Account"
+#~ msgid "Disable Account"
+#~ msgstr "Disattiva account utente"
 
 #~ msgid "Account type:"
 #~ msgstr "Tipo di account:"

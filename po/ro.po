@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard/"
@@ -36,11 +36,11 @@ msgstr "Schimbă avatar"
 msgid "Full name"
 msgstr ""
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr ""
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr ""
 
@@ -82,7 +82,7 @@ msgstr "Apasă pentru autentificare"
 msgid "Authentication failed"
 msgstr ""
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "Anulează"
@@ -91,7 +91,7 @@ msgstr "Anulează"
 msgid "Standard User"
 msgstr ""
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr ""
@@ -108,15 +108,15 @@ msgstr ""
 msgid "Username"
 msgstr ""
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr ""
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "Numele utilizatorului este deja folosit"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 #, fuzzy
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr "Poate conţine doar litere mici, numere şi nici un spaţiu"
@@ -167,7 +167,7 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 
@@ -271,70 +271,65 @@ msgstr ""
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "Nu se poate schimba asta pentru utilizatorul activ curent"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "Nu se pot şterge privilegiile ultimului administrator"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "My Account"
+msgid "Account Lock"
+msgstr "Contul meu"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 #, fuzzy
 #| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
 msgstr "Apasă pentru a schimba limba şi setările locale"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 #, fuzzy
 #| msgid "Log In automatically:"
 msgid "Log In automatically"
 msgstr "Autentificare automată:"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 #, fuzzy
 #| msgid "Enable User Account"
 msgid "Remove Account"
 msgstr "Permite cont utilizator"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Anumite setări necesită drepturi de administrator pentru a fi schimbate"
 
-#: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
-msgid "Enable Account"
-msgstr "Permite cont utilizator"
-
-#: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
-msgid "Disable Account"
-msgstr "Dezactivează cont utilizator"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr ""
@@ -376,6 +371,16 @@ msgstr ""
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr ""
+
+#, fuzzy
+#~| msgid "Enable User Account"
+#~ msgid "Enable Account"
+#~ msgstr "Permite cont utilizator"
+
+#, fuzzy
+#~| msgid "Disable User Account"
+#~ msgid "Disable Account"
+#~ msgstr "Dezactivează cont utilizator"
 
 #, fuzzy, c-format
 #~| msgid "Remove user account and its data"

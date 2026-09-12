@@ -1,0 +1,1 @@
+option('biometrics', type : 'boolean', value : false, description : 'Include settings for fingerprint readers etc')

@@ -21,10 +21,12 @@ namespace SwitchboardPlugUserAccounts.Widgets {
     public class UserSettingsView : Gtk.Box {
         public weak Act.User user { get; construct; }
 
+        private SimpleAction enable_action;
         private UserUtils utils;
         private DeltaUser delta_user;
+#if BIOMETRICS
         private FPUtils fp_utils;
-
+#endif
         private Gtk.ListStore language_store;
         private Gtk.ListStore region_store;
 
@@ -36,12 +38,12 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         private Gtk.Button fingerprint_button;
         private Gtk.Button remove_fp_button;
         private Gtk.Button password_button;
-        private Gtk.Button enable_user_button;
         private Gtk.ComboBoxText user_type_dropdown;
         private Gtk.ComboBox language_dropdown;
         private Gtk.ComboBox region_box;
         private Gtk.Button language_button;
         private Gtk.Switch autologin_switch;
+        private Gtk.Switch lock_switch;
         private Gtk.InfoBar infobar;
 
         //lock widgets
@@ -64,13 +66,23 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         }
 
         construct {
+            enable_action = new SimpleAction.stateful ("enable", null, new Variant.boolean (!user.get_locked ()));
+            enable_action.change_state.connect (change_lock);
+
+            var action_group = new SimpleActionGroup ();
+            action_group.add_action (enable_action);
+
+            insert_action_group ("user", action_group);
+
             utils = new UserUtils (user, this);
             delta_user = new DeltaUser (user);
+#if BIOMETRICS
             try {
                 fp_utils = new FPUtils ();
             } catch (Error e) {
                 warning ("Fingerprint reader not available: %s", e.message);
             }
+#endif
 
             default_regions = get_default_regions ();
 
@@ -100,6 +112,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             };
 
             full_name_entry = new Gtk.Entry () {
+                hexpand = true,
                 valign = Gtk.Align.CENTER
             };
             full_name_entry.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
@@ -114,12 +127,19 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             };
             full_name_lock.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
+            lock_switch = new Gtk.Switch () {
+                action_name = "user.enable",
+                tooltip_text = _("Account Lock"),
+                valign = CENTER
+            };
+
             var avatar_grid = new Gtk.Grid () {
                 halign = START
             };
             avatar_grid.attach (avatar_button, 0, 0);
             avatar_grid.attach (full_name_entry, 1, 0);
             avatar_grid.attach (full_name_lock, 2, 0);
+            avatar_grid.attach (lock_switch, 3, 0);
 
             user_type_dropdown = new Gtk.ComboBoxText () {
                 hexpand = true
@@ -231,6 +251,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             autologin_box.append (autologin_switch);
 
             Gtk.Box fp_box;
+#if BIOMETRICS
             if (fp_utils != null) {
                 fingerprint_button = new Gtk.Button.with_label (_("Set Up Fingerprint…")) {
                     sensitive = false
@@ -282,6 +303,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                     }
                 });
             }
+#endif
 
             password_button = new Gtk.Button.with_label (_("Change Password…"));
             password_button.clicked.connect (() => {
@@ -298,11 +320,6 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 change_password_dialog.present ();
                 change_password_dialog.request_password_change.connect (change_password);
             });
-
-            enable_user_button = new Gtk.Button () {
-                sensitive = false
-            };
-            enable_user_button.clicked.connect (change_lock);
 
             var remove_user_button = new Gtk.Button.with_label (_("Remove Account")) {
                 sensitive = false
@@ -350,7 +367,6 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 margin_start = 12
             };
             action_area.append (remove_user_button);
-            action_area.append (enable_user_button);
             action_area.append (remove_lock);
             action_area.append (new Gtk.Grid () { hexpand = true });
             if (fp_box != null) {
@@ -380,11 +396,23 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             if (get_current_user () == user) {
                 user_type_label.secondary_text = CURRENT_USER_STRING;
                 remove_lock.tooltip_text = CURRENT_USER_STRING;
+
+                enable_action.set_enabled (false);
+                lock_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
+                    _("Account Lock"),
+                    CURRENT_USER_STRING
+                );
             } else if (is_last_admin (user)) {
                 user_type_label.secondary_text = LAST_ADMIN_STRING;
                 remove_lock.tooltip_text = LAST_ADMIN_STRING;
+
+                enable_action.set_enabled (false);
+                lock_switch.tooltip_markup = ("%s\n" + Granite.TOOLTIP_SECONDARY_TEXT_MARKUP).printf (
+                    _("Account Lock"),
+                    LAST_ADMIN_STRING
+                );
             } else {
-                enable_user_button.sensitive = true;
+                enable_action.set_enabled (true);
 
                 remove_user_button.sensitive = true;
                 action_area.remove (remove_lock);
@@ -408,10 +436,12 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 user_type_dropdown.sensitive = false;
                 password_button.sensitive = false;
                 autologin_switch.sensitive = false;
+#if BIOMETRICS
                 if (fp_utils != null) {
                     remove_fp_button.sensitive = false;
                     fingerprint_button.sensitive = false;
                 }
+#endif
 
                 autologin_label.secondary_text = NO_PERMISSION_STRING;
                 user_type_label.secondary_text = NO_PERMISSION_STRING;
@@ -419,10 +449,12 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
             lang_label.secondary_text = null;
 
+#if BIOMETRICS
             if (fp_utils != null) {
                 remove_fp_button.sensitive = current_user && fp_utils.is_enrolled ();
                 fingerprint_button.sensitive = current_user;
             }
+#endif
 
             if (current_user || allowed) {
                 full_name_entry.sensitive = true;
@@ -487,12 +519,8 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             }
 
             var user_locked = user.get_locked ();
-            if (user_locked) {
-                enable_user_button.label = _("Enable Account");
-                enable_user_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
-            } else {
-                enable_user_button.label = _("Disable Account");
-                enable_user_button.remove_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+            if (enable_action.state == user_locked) {
+                enable_action.set_state (!user_locked);
             }
 
             if (delta_user.language != user.get_language ()) {
@@ -607,25 +635,27 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             }
         }
 
-        private void change_lock () {
+        private void change_lock (SimpleAction action, Variant? value) {
+            action.set_state (value);
+
             var permission = get_permission ();
             if (!permission.allowed) {
                 try {
                     permission.acquire ();
                 } catch (Error e) {
                     critical (e.message);
+                    action.set_state (new Variant.boolean (!user.get_locked ()));
                     return;
                 }
             }
 
-            var user_locked = user.get_locked ();
-            if (user_locked) {
-                user.set_password_mode (Act.UserPasswordMode.REGULAR);
-            } else {
-                user.set_automatic_login (false);
-            }
+            user.set_locked (!value.get_boolean ());
 
-            user.set_locked (!user_locked);
+            if (value.get_boolean ()) {
+                user.set_automatic_login (false);
+            } else {
+                user.set_password_mode (REGULAR);
+            }
         }
 
         private void change_password (Act.UserPasswordMode mode, string? new_password) {

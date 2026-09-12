@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2026-01-22 22:55+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementaryos.org/projects/settings/"
@@ -33,11 +33,11 @@ msgstr "Slika"
 msgid "Full name"
 msgstr "Polno ime"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr "Vrsta računa"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr "Jezik"
 
@@ -78,7 +78,7 @@ msgstr "Pritisnite za overitev"
 msgid "Authentication failed"
 msgstr "Overitev je spodletela"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "Prekliči"
@@ -87,7 +87,7 @@ msgstr "Prekliči"
 msgid "Standard User"
 msgstr "Navaden uporabnik"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "Skrbnik"
@@ -104,15 +104,15 @@ msgstr "Polno ime"
 msgid "Username"
 msgstr "Uporabniško ime"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr "Ustvari uporabnika"
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "Uporabniško ime je že zasedeno"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr ""
 "Uporabniško ime lahko vsebuje lahko le male črke in številke, brez presledkov"
@@ -162,10 +162,12 @@ msgid "The touch was too fast. Lift your finger and touch the sensor again."
 msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:146
+#, fuzzy
+#| msgid "Stage passed. Lift your finger and touch the sensor again."
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
-msgstr ""
+msgstr "Preverjanje uspešno. Dvignite prst in se ponovno dotaknite senzorja."
 
 #: src/Dialogs/FingerprintDialog.vala:149
 msgid "Remove your finger and try again"
@@ -266,69 +268,64 @@ msgstr "Omogočeno"
 msgid "Disabled"
 msgstr "Onemogočeno"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr "Nimate dovoljenja za spreminjanje teh nastavitev"
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "Tega za trenutno aktivnega uporabnika ne morete spremeniti"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "Pravic zadnjega skrbnika ne morete odstraniti"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "Account type"
+msgid "Account Lock"
+msgstr "Vrsta računa"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "Navaden"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 #, fuzzy
 #| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
 msgstr "Kliknite za jezikovne in področne nastavitve"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 #, fuzzy
 #| msgid "Log In automatically:"
 msgid "Log In automatically"
 msgstr "Prijavi samodejno:"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr "Spremeni geslo…"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 #, fuzzy
 #| msgid "User Accounts"
 msgid "Remove Account"
 msgstr "Uporabniški računi"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr "Za spreminjanje nekaterih nastavitev so potrebne skrbniške pravice"
 
-#: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
-msgid "Enable Account"
-msgstr "Omogoči uporabniški račun"
-
-#: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
-msgid "Disable Account"
-msgstr "Onemogoči uporabniški račun"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr ""
@@ -368,6 +365,16 @@ msgstr "Pokaži gesla"
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "Gesli se ne ujemata"
+
+#, fuzzy
+#~| msgid "Enable User Account"
+#~ msgid "Enable Account"
+#~ msgstr "Omogoči uporabniški račun"
+
+#, fuzzy
+#~| msgid "Disable User Account"
+#~ msgid "Disable Account"
+#~ msgstr "Onemogoči uporabniški račun"
 
 #~ msgid "Account type:"
 #~ msgstr "Vrsta računa:"

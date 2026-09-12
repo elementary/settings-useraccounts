@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-15 19:30+0000\n"
+"POT-Creation-Date: 2026-09-12 06:21+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -33,11 +33,11 @@ msgstr "아바타"
 msgid "Full name"
 msgstr "전체 이름"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:134
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
 msgid "Account type"
 msgstr "계정 유형"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:142
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
 msgid "Language"
 msgstr "언어"
 
@@ -78,7 +78,7 @@ msgstr "눌러서 인증하기"
 msgid "Authentication failed"
 msgstr "인증에 실패했습니다"
 
-#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:65
+#: src/Dialogs/ChangePasswordDialog.vala:74 src/Dialogs/NewUserDialog.vala:70
 #: src/Dialogs/FingerprintDialog.vala:65
 msgid "Cancel"
 msgstr "취소"
@@ -87,7 +87,7 @@ msgstr "취소"
 msgid "Standard User"
 msgstr "일반 사용자"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:129
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "관리자"
@@ -104,15 +104,15 @@ msgstr "전체 이름"
 msgid "Username"
 msgstr "사용자 이름"
 
-#: src/Dialogs/NewUserDialog.vala:67
+#: src/Dialogs/NewUserDialog.vala:72
 msgid "Create User"
 msgstr "새 사용자 만들기"
 
-#: src/Dialogs/NewUserDialog.vala:127
+#: src/Dialogs/NewUserDialog.vala:132
 msgid "Username is already taken"
 msgstr "사용자 이름이 이미 사용 중입니다"
 
-#: src/Dialogs/NewUserDialog.vala:129
+#: src/Dialogs/NewUserDialog.vala:134
 msgid "Username can only contain lowercase letters and numbers, without spaces"
 msgstr "사용자 계정은 빈칸 없이 소문자 및 숫자만을 포함할 수 있습니다"
 
@@ -162,7 +162,7 @@ msgstr ""
 
 #: src/Dialogs/FingerprintDialog.vala:146
 msgid ""
-"The fingerprint was not centered on the censor. Lift your finger and touch "
+"The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
 
@@ -266,67 +266,62 @@ msgstr "사용함"
 msgid "Disabled"
 msgstr "사용 안 함"
 
-#: src/Views/UserSettingsView.vala:54
+#: src/Views/UserSettingsView.vala:56
 msgid "You do not have permission to change this"
 msgstr "이 설정을 바꿀 권한이 없습니다"
 
-#: src/Views/UserSettingsView.vala:55
+#: src/Views/UserSettingsView.vala:57
 msgid "You cannot change this for the currently active user"
 msgstr "현재 활동 중인 사용자의 설정은 변경할 수 없습니다"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot remove the last administrator's privileges"
 msgstr "마지막 남은 관리자의 권한을 제거할 수 없습니다"
 
-#: src/Views/UserSettingsView.vala:128
+#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
+#: src/Views/UserSettingsView.vala:412
+#, fuzzy
+#| msgid "Account type"
+msgid "Account Lock"
+msgstr "계정 유형"
+
+#: src/Views/UserSettingsView.vala:148
 msgid "Standard"
 msgstr "표준"
 
-#: src/Views/UserSettingsView.vala:212
+#: src/Views/UserSettingsView.vala:232
 #, fuzzy
 #| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
 msgstr "언어 & 로케일 설정으로 전환하려면 클릭하세요"
 
-#: src/Views/UserSettingsView.vala:225
+#: src/Views/UserSettingsView.vala:245
 #, fuzzy
 #| msgid "Log In automatically:"
 msgid "Log In automatically"
 msgstr "자동 로그인:"
 
-#: src/Views/UserSettingsView.vala:236
+#: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:241
+#: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:287
+#: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
 msgstr "비밀번호 바꾸기…"
 
-#: src/Views/UserSettingsView.vala:308
+#: src/Views/UserSettingsView.vala:325
 msgid "Remove Account"
 msgstr "계정 삭제"
 
-#: src/Views/UserSettingsView.vala:321
+#: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
 msgstr "일부 설정은 변경할 때 관리자 권한이 필요합니다"
 
-#: src/Views/UserSettingsView.vala:492
-#, fuzzy
-#| msgid "Enable User Account"
-msgid "Enable Account"
-msgstr "사용자 계정 활성화"
-
-#: src/Views/UserSettingsView.vala:495
-#, fuzzy
-#| msgid "Disable User Account"
-msgid "Disable Account"
-msgstr "사용자 계정 비활성화"
-
-#: src/Views/UserSettingsView.vala:658
+#: src/Views/UserSettingsView.vala:688
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr "%s의 비밀번호를 바꿀 수 없습니다"
@@ -366,6 +361,16 @@ msgstr "비밀번호 보이기"
 #: src/Widgets/PasswordEditor.vala:146
 msgid "Passwords do not match"
 msgstr "비밀번호가 다릅니다"
+
+#, fuzzy
+#~| msgid "Enable User Account"
+#~ msgid "Enable Account"
+#~ msgstr "사용자 계정 활성화"
+
+#, fuzzy
+#~| msgid "Disable User Account"
+#~ msgid "Disable Account"
+#~ msgstr "사용자 계정 비활성화"
 
 #~ msgid "Account type:"
 #~ msgstr "계정 유형:"

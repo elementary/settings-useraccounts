@@ -14,13 +14,13 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
     }
 
     construct {
-        var accounttype_combobox = new Gtk.ComboBoxText ();
-        accounttype_combobox.append_text (_("Standard User"));
-        accounttype_combobox.append_text (_("Administrator"));
-        accounttype_combobox.set_active (0);
+        var accounttype_dropdown = new Gtk.DropDown.from_strings ({
+            _("Standard User"),
+            _("Administrator")
+        });
 
         var accounttype_label = new Granite.HeaderLabel (_("Account Type")) {
-            mnemonic_widget = accounttype_combobox
+            mnemonic_widget = accounttype_dropdown
         };
 
         var realname_entry = new Gtk.Entry () {
@@ -48,7 +48,7 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
             vexpand = true
         };
         form_box.append (accounttype_label);
-        form_box.append (accounttype_combobox);
+        form_box.append (accounttype_dropdown);
         form_box.append (new ErrorRevealer ("."));
         form_box.append (realname_label);
         form_box.append (realname_entry);
@@ -58,9 +58,14 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
         form_box.append (username_error_revealer);
         form_box.append (pw_editor);
 
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = form_box
+        };
+
         modal = true;
+        default_height = 560;
         default_width = 350;
-        get_content_area ().append (form_box);
+        get_content_area ().append (scrolled);
 
         var cancel_button = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
@@ -88,9 +93,9 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
                 string fullname = realname_entry.text;
                 string username = username_entry.text;
                 string password = pw_editor.get_password ();
-                Act.UserAccountType accounttype = Act.UserAccountType.STANDARD;
+                var accounttype = Act.UserAccountType.STANDARD;
 
-                if (accounttype_combobox.get_active () == 1) {
+                if (accounttype_dropdown.selected == 1) {
                     accounttype = Act.UserAccountType.ADMINISTRATOR;
                 }
 
