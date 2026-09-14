@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 06:21+0000\n"
-"PO-Revision-Date: 2025-09-18 05:55+0000\n"
+"PO-Revision-Date: 2026-09-15 13:03+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/ca/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-09 05:59+0000\n"
 
 #: src/Plug.vala:37
@@ -168,15 +168,11 @@ msgstr ""
 "sobre el sensor."
 
 #: src/Dialogs/FingerprintDialog.vala:146
-#, fuzzy
-#| msgid ""
-#| "The fingerprint was not centered on the censor. Lift your finger and "
-#| "touch the sensor again."
 msgid ""
 "The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
 msgstr ""
-"L'empremta no estava centrada al censor. Alceu el dit i torneu a tocar el "
+"L'empremta no estava centrada al censor. Alceu-ne el dit i torneu a tocar el "
 "sensor."
 
 #: src/Dialogs/FingerprintDialog.vala:149
@@ -293,10 +289,8 @@ msgstr "No podeu treure els permisos de l'últim compte administratiu"
 
 #: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
 #: src/Views/UserSettingsView.vala:412
-#, fuzzy
-#| msgid "Account type"
 msgid "Account Lock"
-msgstr "Tipus de compte"
+msgstr "Blocatge del compte"
 
 #: src/Views/UserSettingsView.vala:148
 msgid "Standard"
