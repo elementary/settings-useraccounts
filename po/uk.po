@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 06:21+0000\n"
-"PO-Revision-Date: 2026-09-11 22:01+0000\n"
+"PO-Revision-Date: 2026-09-17 17:02+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/uk/>\n"
@@ -157,40 +157,41 @@ msgstr "Повтор спроби сканування"
 #: src/Dialogs/FingerprintDialog.vala:140
 msgid "The swipe was too short. Lift your finger and swipe the sensor again."
 msgstr ""
+"Проведення пальцем було занадто коротким. Підніміть палець і проведіть по "
+"датчику ще раз."
 
 #: src/Dialogs/FingerprintDialog.vala:143
 msgid "The touch was too fast. Lift your finger and touch the sensor again."
 msgstr ""
+"Дотик був занадто швидким. Підніміть палець і торкніться датчика ще раз."
 
 #: src/Dialogs/FingerprintDialog.vala:146
-#, fuzzy
-#| msgid "Stage passed. Lift your finger and touch the sensor again."
 msgid ""
 "The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
-msgstr "Етап пройдено. Піднесіть палець і знову торкніться датчика."
+msgstr ""
+"Відбиток пальця не був розміщений по центру датчика. Підніміть палець і "
+"знову доторкніться до датчика."
 
 #: src/Dialogs/FingerprintDialog.vala:149
-#, fuzzy
-#| msgid "Remove user account and its data"
 msgid "Remove your finger and try again"
-msgstr "Вилучити обліковий запис користувача та його дані"
+msgstr "Приберіть палець і спробуйте ще раз"
 
 #: src/Dialogs/FingerprintDialog.vala:153
 msgid "Can't remember additional fingerprints"
-msgstr ""
+msgstr "Не вдається зберегти додаткові відбитки пальців"
 
 #: src/Dialogs/FingerprintDialog.vala:154
 msgid "Forget a saved fingerprint and try again."
-msgstr ""
+msgstr "Скиньте збережений відбиток пальця та спробуйте ще раз."
 
 #: src/Dialogs/FingerprintDialog.vala:158
 msgid "This fingerprint is already enrolled."
-msgstr ""
+msgstr "Цей відбиток пальця вже зареєстровано."
 
 #: src/Dialogs/FingerprintDialog.vala:161
 msgid "The fingerprint sensor was disconnected."
-msgstr ""
+msgstr "Датчик відбитків пальців було відключено."
 
 #: src/Dialogs/FingerprintDialog.vala:165
 msgid "Something went wrong"
