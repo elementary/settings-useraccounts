@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 06:21+0000\n"
-"PO-Revision-Date: 2026-09-17 17:02+0000\n"
+"PO-Revision-Date: 2026-09-18 21:02+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/uk/>\n"
@@ -288,10 +288,8 @@ msgstr "Ви не можете вилучити останнього адмін�
 
 #: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
 #: src/Views/UserSettingsView.vala:412
-#, fuzzy
-#| msgid "Account type"
 msgid "Account Lock"
-msgstr "Тип облікового запису"
+msgstr "Блокування облікового запису"
 
 #: src/Views/UserSettingsView.vala:148
 msgid "Standard"
@@ -307,11 +305,11 @@ msgstr "Входити автоматично"
 
 #: src/Views/UserSettingsView.vala:257
 msgid "Set Up Fingerprint…"
-msgstr ""
+msgstr "Додати відбиток пальця…"
 
 #: src/Views/UserSettingsView.vala:262
 msgid "Remove Fingerprint"
-msgstr ""
+msgstr "Вилучити відбиток пальця"
 
 #: src/Views/UserSettingsView.vala:309
 msgid "Change Password…"
