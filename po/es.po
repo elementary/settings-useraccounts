@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 06:21+0000\n"
-"PO-Revision-Date: 2025-09-20 00:55+0000\n"
+"PO-Revision-Date: 2026-10-20 06:24+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <italo@gp-mail.com>\n"
 "Language-Team: Spanish <https://l10n.elementaryos.org/projects/settings/"
 "useraccounts/es/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-02-09 06:00+0000\n"
 
 #: src/Plug.vala:37
@@ -167,10 +167,6 @@ msgstr ""
 "El toque fue demasiado rápido. Levante su dedo y vuelva a tocar el sensor."
 
 #: src/Dialogs/FingerprintDialog.vala:146
-#, fuzzy
-#| msgid ""
-#| "The fingerprint was not centered on the censor. Lift your finger and "
-#| "touch the sensor again."
 msgid ""
 "The fingerprint was not centered on the sensor. Lift your finger and touch "
 "the sensor again."
@@ -289,10 +285,8 @@ msgstr "No puede quitarle permisos a la última cuenta de administrador"
 
 #: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
 #: src/Views/UserSettingsView.vala:412
-#, fuzzy
-#| msgid "Account type"
 msgid "Account Lock"
-msgstr "Tipo de cuenta"
+msgstr "Bloquear cuenta"
 
 #: src/Views/UserSettingsView.vala:148
 msgid "Standard"
