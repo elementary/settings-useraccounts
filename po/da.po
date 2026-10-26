@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-12 06:21+0000\n"
-"PO-Revision-Date: 2020-06-15 15:11+0000\n"
-"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
-"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-useraccounts/da/>\n"
+"PO-Revision-Date: 2026-10-24 20:04+0000\n"
+"Last-Translator: CodeBeats <nicholai67@hotmail.com>\n"
+"Language-Team: Danish <https://l10n.elementaryos.org/projects/settings/"
+"useraccounts/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 2026.5\n"
 "X-Launchpad-Export-Date: 2017-03-24 06:30+0000\n"
 
 #: src/Plug.vala:37
@@ -317,10 +317,8 @@ msgid "Change Password…"
 msgstr "Skift Adgangskode…"
 
 #: src/Views/UserSettingsView.vala:325
-#, fuzzy
-#| msgid "User Accounts"
 msgid "Remove Account"
-msgstr "Brugerkonto"
+msgstr "Fjern Konto"
 
 #: src/Views/UserSettingsView.vala:338
 msgid "Some settings require administrator rights to be changed"
