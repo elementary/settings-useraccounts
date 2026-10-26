@@ -112,7 +112,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 margin_start = 6,
                 tooltip_text = NO_PERMISSION_STRING
             };
-            full_name_lock.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+            full_name_lock.add_css_class (Granite.CssClass.DIM);
 
             lock_switch = new Gtk.Switch () {
                 action_name = "user.enable",
@@ -325,7 +325,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             var remove_user_button = new Gtk.Button.with_label (_("Remove Account")) {
                 sensitive = false
             };
-            remove_user_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            remove_user_button.add_css_class (Granite.CssClass.DESTRUCTIVE);
             remove_user_button.clicked.connect (() => remove_user ());
 
             var remove_lock = new Gtk.Image.from_icon_name ("changes-prevent-symbolic") {

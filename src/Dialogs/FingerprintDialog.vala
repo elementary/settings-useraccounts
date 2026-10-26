@@ -80,7 +80,7 @@ public class SwitchboardPlugUserAccounts.FingerprintDialog : Granite.Dialog {
         try {
             fp_utils = new SwitchboardPlugUserAccounts.FPUtils ();
             finish_button = add_button (_("Finish"), Gtk.ResponseType.OK);
-            finish_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+            finish_button.add_css_class (Granite.CssClass.SUGGESTED);
             finish_button.sensitive = false;
             set_default_widget (finish_button);
         } catch (Error e) {
