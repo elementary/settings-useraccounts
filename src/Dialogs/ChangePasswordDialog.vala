@@ -39,7 +39,7 @@ public class SwitchboardPlugUserAccounts.ChangePasswordDialog : Granite.Dialog {
             };
 
             current_pw_error = new ErrorRevealer (_("Authentication failed"));
-            current_pw_error.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
+            current_pw_error.label_widget.add_css_class (Granite.CssClass.ERROR);
 
             form_box.append (current_pw_label);
             form_box.append (current_pw_entry);
@@ -75,7 +75,7 @@ public class SwitchboardPlugUserAccounts.ChangePasswordDialog : Granite.Dialog {
 
         var button_change = add_button (_("Change Password"), Gtk.ResponseType.OK);
         button_change.sensitive = false;
-        button_change.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        button_change.add_css_class (Granite.CssClass.SUGGESTED);
 
         pw_editor.validation_changed.connect (() => {
             var permission = get_permission ();

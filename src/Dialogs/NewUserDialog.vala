@@ -39,7 +39,7 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
         };
 
         username_error_revealer = new ErrorRevealer (".");
-        username_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
+        username_error_revealer.label_widget.add_css_class (Granite.CssClass.ERROR);
 
         pw_editor = new Widgets.PasswordEditor ();
 
@@ -72,7 +72,7 @@ public class SwitchboardPlugUserAccounts.NewUserDialog : Granite.Dialog {
         create_button = (Gtk.Button) add_button (_("Create User"), Gtk.ResponseType.OK);
         create_button.receives_default = true;
         create_button.sensitive = false;
-        create_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        create_button.add_css_class (Granite.CssClass.SUGGESTED);
 
         realname_entry.changed.connect (() => {
             var username = gen_username (realname_entry.text);
