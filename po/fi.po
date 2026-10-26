@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-12 06:21+0000\n"
+"POT-Creation-Date: 2026-10-26 15:34+0000\n"
 "PO-Revision-Date: 2026-03-22 15:55+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementaryos.org/projects/settings/"
@@ -34,11 +34,11 @@ msgstr "Profiilikuva"
 msgid "Full name"
 msgstr "Koko nimi"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:177
 msgid "Account type"
 msgstr "Käyttäjätilin tyyppi"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:185
 msgid "Language"
 msgstr "Kieli"
 
@@ -88,7 +88,7 @@ msgstr "Peru"
 msgid "Standard User"
 msgstr "Peruskäyttäjä"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:172
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "Ylläpitäjä"
@@ -271,79 +271,79 @@ msgstr "Käytössä"
 msgid "Disabled"
 msgstr "Pois käytöstä"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:57
 msgid "You do not have permission to change this"
 msgstr "Oikeutesi eivät riitä tämän kohdan muuttamiseen"
 
-#: src/Views/UserSettingsView.vala:57
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot change this for the currently active user"
 msgstr "Et voi vaihtaa tätä parhaillaan aktiivisena olevalle käyttäjälle"
 
-#: src/Views/UserSettingsView.vala:58
+#: src/Views/UserSettingsView.vala:59
 msgid "You cannot remove the last administrator's privileges"
 msgstr "Et voi poistaa viimeisiä ylläpitäjän oikeuksia"
 
-#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
-#: src/Views/UserSettingsView.vala:412
+#: src/Views/UserSettingsView.vala:93
+msgid "Remove"
+msgstr "Poista"
+
+#: src/Views/UserSettingsView.vala:101
+msgid "Set from File…"
+msgstr "Aseta tiedostosta…"
+
+#: src/Views/UserSettingsView.vala:142 src/Views/UserSettingsView.vala:426
+#: src/Views/UserSettingsView.vala:435
 #, fuzzy
 #| msgid "Account type"
 msgid "Account Lock"
 msgstr "Käyttäjätilin tyyppi"
 
-#: src/Views/UserSettingsView.vala:148
+#: src/Views/UserSettingsView.vala:171
 msgid "Standard"
 msgstr "Tavallinen"
 
-#: src/Views/UserSettingsView.vala:232
+#: src/Views/UserSettingsView.vala:255
 msgid "Click to switch to Language & Region Settings"
 msgstr "Napsauta vaihtaaksesi kieliasetuksiin"
 
-#: src/Views/UserSettingsView.vala:245
+#: src/Views/UserSettingsView.vala:268
 msgid "Log In automatically"
 msgstr "Kirjaudu automaattisesti"
 
-#: src/Views/UserSettingsView.vala:257
+#: src/Views/UserSettingsView.vala:280
 msgid "Set Up Fingerprint…"
 msgstr "Määritä sormenjälki…"
 
-#: src/Views/UserSettingsView.vala:262
+#: src/Views/UserSettingsView.vala:285
 msgid "Remove Fingerprint"
 msgstr "Poista sormenjälki"
 
-#: src/Views/UserSettingsView.vala:309
+#: src/Views/UserSettingsView.vala:332
 msgid "Change Password…"
 msgstr "Vaihda salasana…"
 
-#: src/Views/UserSettingsView.vala:325
+#: src/Views/UserSettingsView.vala:348
 msgid "Remove Account"
 msgstr "Poista tili"
 
-#: src/Views/UserSettingsView.vala:338
+#: src/Views/UserSettingsView.vala:361
 msgid "Some settings require administrator rights to be changed"
 msgstr "Jotkin asetukset vaativat muutoksia varten ylläpitäjän oikeuksia"
 
-#: src/Views/UserSettingsView.vala:688
+#: src/Views/UserSettingsView.vala:732
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr "Käyttäjän %s salasanaa ei voitu vaihtaa"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:32
-msgid "Remove"
-msgstr "Poista"
-
-#: src/Widgets/Popovers/AvatarPopover.vala:43
-msgid "Set from File…"
-msgstr "Aseta tiedostosta…"
-
-#: src/Widgets/Popovers/AvatarPopover.vala:75
+#: src/Views/UserSettingsView.vala:753
 msgid "Images"
 msgstr "Kuvat"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:81
+#: src/Views/UserSettingsView.vala:759
 msgid "Select an image"
 msgstr "Valitse kuva"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:82
+#: src/Views/UserSettingsView.vala:760
 msgid "Open"
 msgstr "Avaa"
 

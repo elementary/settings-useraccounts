@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-12 06:21+0000\n"
+"POT-Creation-Date: 2026-10-26 15:34+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Albanian <https://l10n.elementary.io/projects/switchboard/"
@@ -34,12 +34,12 @@ msgstr "Ndrysho foton personale"
 msgid "Full name"
 msgstr "Emri i plotë"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:177
 #, fuzzy
 msgid "Account type"
 msgstr "Tipi i llogarisë:"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:185
 #, fuzzy
 msgid "Language"
 msgstr "Gjuha:"
@@ -90,7 +90,7 @@ msgstr "Anulo"
 msgid "Standard User"
 msgstr "Prëdorues standard"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:172
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "Administrator"
@@ -271,84 +271,84 @@ msgstr "Aktivizuar"
 msgid "Disabled"
 msgstr "Çaktivizuar"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:57
 msgid "You do not have permission to change this"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:57
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot change this for the currently active user"
 msgstr "Nuk mund ta ndryshoni këtë për përdoruesin aktualisht aktiv"
 
-#: src/Views/UserSettingsView.vala:58
+#: src/Views/UserSettingsView.vala:59
 msgid "You cannot remove the last administrator's privileges"
 msgstr "Nuk mund të hiqni të drejtat e administratorit e fundit"
 
-#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
-#: src/Views/UserSettingsView.vala:412
+#: src/Views/UserSettingsView.vala:93
+msgid "Remove"
+msgstr "Hiqe"
+
+#: src/Views/UserSettingsView.vala:101
+msgid "Set from File…"
+msgstr ""
+
+#: src/Views/UserSettingsView.vala:142 src/Views/UserSettingsView.vala:426
+#: src/Views/UserSettingsView.vala:435
 #, fuzzy
 msgid "Account Lock"
 msgstr "Tipi i llogarisë:"
 
-#: src/Views/UserSettingsView.vala:148
+#: src/Views/UserSettingsView.vala:171
 msgid "Standard"
 msgstr "Standard"
 
-#: src/Views/UserSettingsView.vala:232
+#: src/Views/UserSettingsView.vala:255
 #, fuzzy
 #| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
 msgstr "Kliko për të kaluar në rregullimet e Gjuha dhe Rajoni"
 
-#: src/Views/UserSettingsView.vala:245
+#: src/Views/UserSettingsView.vala:268
 msgid "Log In automatically"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:257
+#: src/Views/UserSettingsView.vala:280
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:262
+#: src/Views/UserSettingsView.vala:285
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:309
+#: src/Views/UserSettingsView.vala:332
 #, fuzzy
 msgid "Change Password…"
 msgstr "Ndrysho fjalëkalimin"
 
-#: src/Views/UserSettingsView.vala:325
+#: src/Views/UserSettingsView.vala:348
 #, fuzzy
 #| msgid "User Accounts"
 msgid "Remove Account"
 msgstr "Llogaritë e përdoruesit"
 
-#: src/Views/UserSettingsView.vala:338
+#: src/Views/UserSettingsView.vala:361
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Disa parametra kanë nevojë për të drejtat e administratorit për tu ndryshuar"
 
-#: src/Views/UserSettingsView.vala:688
+#: src/Views/UserSettingsView.vala:732
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr ""
 
-#: src/Widgets/Popovers/AvatarPopover.vala:32
-msgid "Remove"
-msgstr "Hiqe"
-
-#: src/Widgets/Popovers/AvatarPopover.vala:43
-msgid "Set from File…"
-msgstr ""
-
-#: src/Widgets/Popovers/AvatarPopover.vala:75
+#: src/Views/UserSettingsView.vala:753
 msgid "Images"
 msgstr "Imazhet"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:81
+#: src/Views/UserSettingsView.vala:759
 msgid "Select an image"
 msgstr "Zgjidh një foto"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:82
+#: src/Views/UserSettingsView.vala:760
 msgid "Open"
 msgstr "Hap"
 
