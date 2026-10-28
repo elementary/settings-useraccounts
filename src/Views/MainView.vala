@@ -1,6 +1,6 @@
 /*
  * SPDX-License-Identifier: GPL-3.0-or-later
- * SPDX-FileCopyrightText: 2014-2023 elementary, Inc. (https://elementary.io)
+ * SPDX-FileCopyrightText: 2014-2026 elementary, Inc. (https://elementary.io)
  */
 
 public class SwitchboardPlugUserAccounts.Widgets.MainView : Gtk.Box {
@@ -11,7 +11,7 @@ public class SwitchboardPlugUserAccounts.Widgets.MainView : Gtk.Box {
     private Granite.HeaderLabel my_account_label;
     private Granite.HeaderLabel other_accounts_label;
     private Gtk.ListBoxRow guest_session_row;
-    private Gtk.Label guest_description_label;
+    private Granite.HeaderLabel full_name_label;
 
     construct {
         var headerbar = new Adw.HeaderBar () {
@@ -94,7 +94,8 @@ public class SwitchboardPlugUserAccounts.Widgets.MainView : Gtk.Box {
         //only build the guest session list entry / row when lightDM is the display manager
         if (get_display_manager () == "lightdm") {
             var avatar = new Adw.Avatar (32, null, false) {
-                margin_start = 3
+                margin_start = 3,
+                margin_end = 3
             };
 
             // We want to use the user's accent, not a random color
@@ -114,25 +115,16 @@ public class SwitchboardPlugUserAccounts.Widgets.MainView : Gtk.Box {
             avatar_context.remove_css_class ("color13");
             avatar_context.remove_css_class ("color14");
 
-            var full_name_label = new Gtk.Label (_("Guest Session")) {
-                halign = START
+            full_name_label = new Granite.HeaderLabel (_("Guest Session")) {
+                size = H3
             };
-            full_name_label.add_css_class (Granite.STYLE_CLASS_H3_LABEL);
 
-            guest_description_label = new Gtk.Label (null) {
-                halign = START
-            };
-            guest_description_label.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
-
-            var row_grid = new Gtk.Grid () {
-                column_spacing = 9
-            };
-            row_grid.attach (avatar, 0, 0, 1, 2);
-            row_grid.attach (full_name_label, 1, 0);
-            row_grid.attach (guest_description_label, 1, 1);
+            var row_box = new Granite.Box (HORIZONTAL, HALF);
+            row_box.append (avatar);
+            row_box.append (full_name_label);
 
             guest_session_row = new Gtk.ListBoxRow () {
-                child = row_grid,
+                child = row_box,
                 name = "guest_session"
             };
 
@@ -303,9 +295,9 @@ public class SwitchboardPlugUserAccounts.Widgets.MainView : Gtk.Box {
 
     private void update_guest () {
         if (get_guest_session_state ("show")) {
-            guest_description_label.label = _("Enabled");
+            full_name_label.secondary_text = _("Enabled");
         } else {
-            guest_description_label.label = _("Disabled");
+            full_name_label.secondary_text = _("Disabled");
         }
     }
 
