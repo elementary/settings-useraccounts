@@ -50,7 +50,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             pw_levelbar.add_offset_value ("full", 100.0);
 
             pw_error_revealer = new ErrorRevealer ("."); // Pango needs a non-null string to set markup
-            pw_error_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_WARNING);
+            pw_error_revealer.label_widget.add_css_class (Granite.CssClass.WARNING);
 
             confirm_entry = new Granite.ValidatedEntry () {
                 sensitive = false,
@@ -62,7 +62,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             };
 
             confirm_entry_revealer = new ErrorRevealer (".");
-            confirm_entry_revealer.label_widget.add_css_class (Granite.STYLE_CLASS_ERROR);
+            confirm_entry_revealer.label_widget.add_css_class (Granite.CssClass.ERROR);
 
             var show_pw_check = new Gtk.CheckButton.with_label (_("Show passwords"));
 

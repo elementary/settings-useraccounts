@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-12 06:21+0000\n"
+"POT-Creation-Date: 2026-10-26 15:34+0000\n"
 "PO-Revision-Date: 2024-08-07 18:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -32,11 +32,11 @@ msgstr "وێنەی پرۆفایل"
 msgid "Full name"
 msgstr "ناوی تەواو"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:177
 msgid "Account type"
 msgstr "جۆری هەژمار"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:185
 msgid "Language"
 msgstr "زمان"
 
@@ -86,7 +86,7 @@ msgstr "هەڵوەشاندنەوە"
 msgid "Standard User"
 msgstr "بەکارهێنەری ئاسایی"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:172
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "بەڕێوەبەر"
@@ -268,85 +268,85 @@ msgstr "کاراکراو"
 msgid "Disabled"
 msgstr "وەستێنراو"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:57
 msgid "You do not have permission to change this"
 msgstr "مۆڵەتی گۆڕینی ئەمەت نییە"
 
-#: src/Views/UserSettingsView.vala:57
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot change this for the currently active user"
 msgstr "ناتوانیت ئەمە بۆ بەکارهێنەری چالاکی ئێستا بگۆڕیت"
 
-#: src/Views/UserSettingsView.vala:58
+#: src/Views/UserSettingsView.vala:59
 msgid "You cannot remove the last administrator's privileges"
 msgstr "ناتوانیت کۆتا مۆڵەتی بەڕێوەبەر بسڕیتەوە"
 
-#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
-#: src/Views/UserSettingsView.vala:412
+#: src/Views/UserSettingsView.vala:93
+msgid "Remove"
+msgstr "سڕینەوە"
+
+#: src/Views/UserSettingsView.vala:101
+msgid "Set from File…"
+msgstr "هەڵبژاردنی وێنە…"
+
+#: src/Views/UserSettingsView.vala:142 src/Views/UserSettingsView.vala:426
+#: src/Views/UserSettingsView.vala:435
 #, fuzzy
 #| msgid "Account type"
 msgid "Account Lock"
 msgstr "جۆری هەژمار"
 
-#: src/Views/UserSettingsView.vala:148
+#: src/Views/UserSettingsView.vala:171
 msgid "Standard"
 msgstr "ئاسایی"
 
-#: src/Views/UserSettingsView.vala:232
+#: src/Views/UserSettingsView.vala:255
 #, fuzzy
 #| msgid "Click to switch to Language & Locale Settings"
 msgid "Click to switch to Language & Region Settings"
 msgstr "کرتە بکە بۆ گۆڕینی زمان و ڕێکخستنەکانی ناوخۆیی"
 
-#: src/Views/UserSettingsView.vala:245
+#: src/Views/UserSettingsView.vala:268
 #, fuzzy
 #| msgid "Log In automatically:"
 msgid "Log In automatically"
 msgstr "خۆکارانە چوونەژور:"
 
-#: src/Views/UserSettingsView.vala:257
+#: src/Views/UserSettingsView.vala:280
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:262
+#: src/Views/UserSettingsView.vala:285
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:309
+#: src/Views/UserSettingsView.vala:332
 msgid "Change Password…"
 msgstr "گۆڕینی تێپەڕەوشە…"
 
-#: src/Views/UserSettingsView.vala:325
+#: src/Views/UserSettingsView.vala:348
 msgid "Remove Account"
 msgstr "سڕینەوەی هەژمار"
 
-#: src/Views/UserSettingsView.vala:338
+#: src/Views/UserSettingsView.vala:361
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "بەشێک لە ڕێکخستنەکان پێویستیان بە دەسەڵاتی بەڕێوەبەرە بۆ ئەوەی گۆڕانکاریان "
 "بەسەردا بێت"
 
-#: src/Views/UserSettingsView.vala:688
+#: src/Views/UserSettingsView.vala:732
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr "نەتوانرا تێپەڕەوشەی \"%s\" بگۆڕدرێت"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:32
-msgid "Remove"
-msgstr "سڕینەوە"
-
-#: src/Widgets/Popovers/AvatarPopover.vala:43
-msgid "Set from File…"
-msgstr "هەڵبژاردنی وێنە…"
-
-#: src/Widgets/Popovers/AvatarPopover.vala:75
+#: src/Views/UserSettingsView.vala:753
 msgid "Images"
 msgstr "وێنەکان"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:81
+#: src/Views/UserSettingsView.vala:759
 msgid "Select an image"
 msgstr "وێنەیەک دیاریبکە"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:82
+#: src/Views/UserSettingsView.vala:760
 msgid "Open"
 msgstr "کردنەوە"
 

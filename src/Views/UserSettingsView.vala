@@ -45,6 +45,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
         private Gtk.Switch autologin_switch;
         private Gtk.Switch lock_switch;
         private Gtk.InfoBar infobar;
+        private Gtk.Popover avatar_popover;
 
         //lock widgets
         private Gtk.Image full_name_lock;
@@ -88,7 +89,29 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
             avatar = new Adw.Avatar (48, user.real_name, true);
 
-            var avatar_popover = new AvatarPopover (user, utils);
+            var remove_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Remove")) {
+                    xalign = 0
+                }
+            };
+            remove_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+            remove_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+
+            var select_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Set from File…")) {
+                    xalign = 0
+                }
+            };
+            select_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+
+            var button_box = new Gtk.Box (VERTICAL, 0);
+            button_box.append (remove_button);
+            button_box.append (select_button);
+
+            avatar_popover = new Gtk.Popover () {
+                autohide = true,
+                child = button_box
+            };
             avatar_popover.add_css_class (Granite.STYLE_CLASS_MENU);
 
             var avatar_button = new Gtk.MenuButton () {
@@ -112,7 +135,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                 margin_start = 6,
                 tooltip_text = NO_PERMISSION_STRING
             };
-            full_name_lock.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
+            full_name_lock.add_css_class (Granite.CssClass.DIM);
 
             lock_switch = new Gtk.Switch () {
                 action_name = "user.enable",
@@ -325,7 +348,7 @@ namespace SwitchboardPlugUserAccounts.Widgets {
             var remove_user_button = new Gtk.Button.with_label (_("Remove Account")) {
                 sensitive = false
             };
-            remove_user_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            remove_user_button.add_css_class (Granite.CssClass.DESTRUCTIVE);
             remove_user_button.clicked.connect (() => remove_user ());
 
             var remove_lock = new Gtk.Image.from_icon_name ("changes-prevent-symbolic") {
@@ -423,6 +446,27 @@ namespace SwitchboardPlugUserAccounts.Widgets {
 
             user.changed.connect (update_ui);
             user.changed.connect (update_permission);
+
+            avatar_button.activate.connect (() => {
+                if (!avatar_button.active) {
+                    return;
+                }
+
+                select_button.grab_focus ();
+
+                if (user.get_icon_file ().contains (".face")) {
+                    remove_button.sensitive = false;
+                } else {
+                    remove_button.sensitive = true;
+                }
+            });
+
+            remove_button.clicked.connect (() => {
+                avatar_popover.popdown ();
+                utils.change_avatar (null);
+            });
+
+            select_button.clicked.connect (select_from_file);
         }
 
         private void update_permission () {
@@ -699,6 +743,33 @@ namespace SwitchboardPlugUserAccounts.Widgets {
                         }
                     });
                 }
+            }
+        }
+
+        private async void select_from_file () {
+            avatar_popover.popdown ();
+
+            var filter = new Gtk.FileFilter ();
+            filter.set_filter_name (_("Images"));
+            filter.add_mime_type ("image/jpeg");
+            filter.add_mime_type ("image/jpg");
+            filter.add_mime_type ("image/png");
+
+            var file_dialog = new Gtk.FileDialog () {
+                title = _("Select an image"),
+                accept_label = _("Open")
+            };
+            file_dialog.default_filter = filter;
+
+            try {
+                File file = yield file_dialog.open (((Gtk.Application) Application.get_default ()).active_window, null);
+                var path = file.get_path ();
+
+                var avatar_dialog = new Dialogs.AvatarDialog (path);
+                avatar_dialog.request_avatar_change.connect (utils.change_avatar);
+                avatar_dialog.present ();
+            } catch (Error err) {
+                warning ("Failed to select image: %s", err.message);
             }
         }
     }

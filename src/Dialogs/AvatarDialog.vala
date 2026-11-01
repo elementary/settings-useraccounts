@@ -36,7 +36,7 @@ public class SwitchboardPlugUserAccounts.Dialogs.AvatarDialog : Granite.MessageD
 
     construct {
         var button_change = add_button (_("Change Avatar"), Gtk.ResponseType.OK);
-        button_change.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        button_change.add_css_class (Granite.CssClass.SUGGESTED);
 
         response.connect (on_response);
 
@@ -44,8 +44,8 @@ public class SwitchboardPlugUserAccounts.Dialogs.AvatarDialog : Granite.MessageD
             var pixbuf = new Gdk.Pixbuf.from_file (pixbuf_path).apply_embedded_orientation ();
 
             cropview = new Widgets.CropView (pixbuf, 400);
-            cropview.add_css_class (Granite.STYLE_CLASS_CARD);
-            cropview.add_css_class (Granite.STYLE_CLASS_CHECKERBOARD);
+            cropview.add_css_class (Granite.CssClass.CARD);
+            cropview.add_css_class (Granite.CssClass.CHECKERBOARD);
 
             custom_bin.append (cropview);
         } catch (Error e) {

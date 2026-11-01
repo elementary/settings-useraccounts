@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-12 06:21+0000\n"
+"POT-Creation-Date: 2026-10-26 15:34+0000\n"
 "PO-Revision-Date: 2024-11-28 12:16+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -34,11 +34,11 @@ msgstr "Imagem de perfil"
 msgid "Full name"
 msgstr "Nome completo"
 
-#: src/Plug.vala:84 src/Views/UserSettingsView.vala:154
+#: src/Plug.vala:84 src/Views/UserSettingsView.vala:177
 msgid "Account type"
 msgstr "Tipo de conta"
 
-#: src/Plug.vala:85 src/Views/UserSettingsView.vala:162
+#: src/Plug.vala:85 src/Views/UserSettingsView.vala:185
 msgid "Language"
 msgstr "Idioma"
 
@@ -88,7 +88,7 @@ msgstr "Cancelar"
 msgid "Standard User"
 msgstr "Utilizador Padrão"
 
-#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:149
+#: src/Dialogs/NewUserDialog.vala:19 src/Views/UserSettingsView.vala:172
 #: src/Widgets/UserItem.vala:94
 msgid "Administrator"
 msgstr "Administrador"
@@ -272,80 +272,80 @@ msgstr "Ativo"
 msgid "Disabled"
 msgstr "Desativado"
 
-#: src/Views/UserSettingsView.vala:56
+#: src/Views/UserSettingsView.vala:57
 msgid "You do not have permission to change this"
 msgstr "Não tem permissão para modificar isto"
 
-#: src/Views/UserSettingsView.vala:57
+#: src/Views/UserSettingsView.vala:58
 msgid "You cannot change this for the currently active user"
 msgstr "Não pode alterar isto para o utilizador ativo agora"
 
-#: src/Views/UserSettingsView.vala:58
+#: src/Views/UserSettingsView.vala:59
 msgid "You cannot remove the last administrator's privileges"
 msgstr "Não pode remover os privilégios do último administrador"
 
-#: src/Views/UserSettingsView.vala:119 src/Views/UserSettingsView.vala:403
-#: src/Views/UserSettingsView.vala:412
+#: src/Views/UserSettingsView.vala:93
+msgid "Remove"
+msgstr "Remover"
+
+#: src/Views/UserSettingsView.vala:101
+msgid "Set from File…"
+msgstr "Definir a partir de Ficheiro…"
+
+#: src/Views/UserSettingsView.vala:142 src/Views/UserSettingsView.vala:426
+#: src/Views/UserSettingsView.vala:435
 #, fuzzy
 #| msgid "Account type"
 msgid "Account Lock"
 msgstr "Tipo de conta"
 
-#: src/Views/UserSettingsView.vala:148
+#: src/Views/UserSettingsView.vala:171
 msgid "Standard"
 msgstr "Padrão"
 
-#: src/Views/UserSettingsView.vala:232
+#: src/Views/UserSettingsView.vala:255
 msgid "Click to switch to Language & Region Settings"
 msgstr "Clicar para mudar para as Definições de Idioma e Região"
 
-#: src/Views/UserSettingsView.vala:245
+#: src/Views/UserSettingsView.vala:268
 msgid "Log In automatically"
 msgstr "Iniciar sessão automaticamente"
 
-#: src/Views/UserSettingsView.vala:257
+#: src/Views/UserSettingsView.vala:280
 msgid "Set Up Fingerprint…"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:262
+#: src/Views/UserSettingsView.vala:285
 msgid "Remove Fingerprint"
 msgstr ""
 
-#: src/Views/UserSettingsView.vala:309
+#: src/Views/UserSettingsView.vala:332
 msgid "Change Password…"
 msgstr "Alterar palavra-passe…"
 
-#: src/Views/UserSettingsView.vala:325
+#: src/Views/UserSettingsView.vala:348
 msgid "Remove Account"
 msgstr "Remover conta"
 
-#: src/Views/UserSettingsView.vala:338
+#: src/Views/UserSettingsView.vala:361
 msgid "Some settings require administrator rights to be changed"
 msgstr ""
 "Algumas definições requerem privilégios de administrador para serem alteradas"
 
-#: src/Views/UserSettingsView.vala:688
+#: src/Views/UserSettingsView.vala:732
 #, c-format
 msgid "Unable to change the password for %s"
 msgstr "Não foi possível alterar a palavra-passe para %s"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:32
-msgid "Remove"
-msgstr "Remover"
-
-#: src/Widgets/Popovers/AvatarPopover.vala:43
-msgid "Set from File…"
-msgstr "Definir a partir de Ficheiro…"
-
-#: src/Widgets/Popovers/AvatarPopover.vala:75
+#: src/Views/UserSettingsView.vala:753
 msgid "Images"
 msgstr "Imagens"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:81
+#: src/Views/UserSettingsView.vala:759
 msgid "Select an image"
 msgstr "Escolha uma imagem"
 
-#: src/Widgets/Popovers/AvatarPopover.vala:82
+#: src/Views/UserSettingsView.vala:760
 msgid "Open"
 msgstr "Abrir"
 
